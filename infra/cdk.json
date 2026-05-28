@@ -1,0 +1,6 @@
+{
+  "app": "uv run --project . python app.py",
+  "context": {
+    "@aws-cdk/core:bootstrapQualifier": "hnb659fds"
+  }
+}

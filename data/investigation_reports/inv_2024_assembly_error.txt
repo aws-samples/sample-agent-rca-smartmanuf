@@ -1,0 +1,174 @@
+INVESTIGATION REPORT: INV-2024-0067
+================================================================================
+
+TITLE: Assembly Line Component Mix-up - NEXUS Troponin
+PRODUCT: NEXUS Troponin (Reference 30422)
+DATE OPENED: 2024-09-10
+DATE CLOSED: 2024-11-15
+STATUS: Closed - CAPA Verified Effective
+
+CLASSIFICATION: Process Deviation Investigation
+PRIORITY: High
+INVESTIGATION LEAD: S. Moreau (Production Quality)
+APPROVED BY: L. Fontaine (Quality Manager)
+
+================================================================================
+SECTION 1: PROBLEM STATEMENT
+================================================================================
+
+During in-process quality check on assembly line ASM-LINE-01, the QC inspector
+identified incorrect reagent strips in a NEXUS Troponin kit being assembled.
+NEXUS D-Dimer reagent strips (Reference 30425) were found loaded in the
+reagent strip feeder instead of NEXUS Troponin strips (Reference 30422). The
+error was caught before any completed kits left the assembly area.
+
+Affected lot: 1010500120 (NEXUS Troponin)
+Previous product on line: NEXUS D-Dimer (lot 1010500119)
+Detection point: In-process QC check (station 4 of 6)
+
+================================================================================
+SECTION 2: INVESTIGATION METHODOLOGY - QQOCQPC
+================================================================================
+
+QUI (Who):
+  - Who detected the problem? QC Inspector R. Blanc during routine in-process
+    check
+  - Who performed the changeover? Operator OP-022 (T. Moreau)
+  - Who supervised? SUP-005 (D. Leroy) - signed off changeover checklist
+
+QUOI (What):
+  - What is the problem? Wrong reagent strips loaded after product changeover
+  - What product is affected? NEXUS Troponin (Reference 30422)
+  - What component was wrong? Reagent strips from NEXUS D-Dimer (Reference
+    30425) were in the feeder
+  - What was correct? SPR cones were correct (Troponin cones have distinct
+    red cap, easily identifiable)
+
+OU (Where):
+  - Where did the error occur? ASM-LINE-01, reagent strip feeder (Station 3)
+  - Where was it detected? Station 4 (QC in-process inspection point)
+  - Where was the previous product run? Same line (ASM-LINE-01)
+
+COMMENT (How):
+  - How did the wrong strips get loaded? Incomplete clearance of reagent
+    strip feeder during changeover - D-Dimer strips remained in feeder
+  - How was it detected? QC inspector visual check - D-Dimer strips have
+    yellow color coding vs Troponin green color coding
+
+QUAND (When):
+  - When did the changeover occur? 2024-09-10, 10:15-10:50 (35 minutes)
+  - When was the error detected? 2024-09-10, 11:30 (40 minutes into
+    Troponin production)
+  - When was production stopped? 2024-09-10, 11:32
+
+POURQUOI (Why):
+  - Why did the error occur? Reagent strip feeder not fully cleared during
+    changeover; operator focused on SPR cone changeover and overlooked
+    reagent strip verification
+  - Why was it not caught earlier? Barcode scan at Station 3 was bypassed
+    (scanner flagged "read error" and operator overrode)
+
+COMBIEN (How much):
+  - How many units affected? Approximately 150 partially assembled kits
+    (all segregated and disassembled)
+  - How many released to market? ZERO (caught during in-process check)
+  - Financial impact: EUR 8,500 (material waste and production downtime)
+
+================================================================================
+SECTION 3: ROOT CAUSE ANALYSIS (5M / Ishikawa)
+================================================================================
+
+MATIERE (Materials):
+  - D-Dimer and Troponin reagent strips are physically similar in size
+  - Color coding present but subtle (yellow vs green)
+  CONCLUSION: Material similarity is a CONTRIBUTING FACTOR but not root cause
+
+METHODE (Method):
+  - Changeover procedure SOP-ASM-003 Rev 2 was followed
+  - Changeover time: 35 minutes (meets 30-minute minimum)
+  - Checklist: 7 of 8 items completed
+  - MISSING: Item 6 (Verify correct reagent strips loaded) was checked as
+    completed but investigation found strips were not actually verified
+  - Barcode scan (Item 5) returned "read error" and operator overrode
+  CONCLUSION: Method compliance issue - CONFIRMED as root cause
+
+MILIEU (Environment):
+  - No environmental anomalies
+  CONCLUSION: Environment ELIMINATED
+
+MAIN D'OEUVRE (Personnel):
+  - Operator OP-022: Experienced (3 years), training current
+  - Operator reported being "in a hurry" to complete changeover
+  - Supervisor SUP-005: Signed checklist without independently verifying
+    all items
+  CONCLUSION: Personnel compliance is a CONTRIBUTING FACTOR
+
+MACHINE (Equipment):
+  - Barcode scanner at Station 3: "Read error" logged at 10:48
+  - Investigation found scanner lens was dirty (cleaned, function restored)
+  - Scanner error contributed to failure to detect wrong strips
+  CONCLUSION: Equipment is a CONTRIBUTING FACTOR
+
+================================================================================
+SECTION 4: ROOT CAUSE DETERMINATION
+================================================================================
+
+ROOT CAUSE: Incomplete changeover verification - reagent strip feeder not
+properly cleared and verified during product changeover. Operator marked
+checklist Item 6 as complete without actual verification. Barcode scanner
+error at Station 3 removed the automated detection control.
+
+CATEGORY: Methode (Method) - Procedural non-compliance
+
+CONTRIBUTING FACTORS:
+1. Physical similarity of reagent strips between products
+2. Barcode scanner malfunction (dirty lens)
+3. Supervisor signed off without independent verification
+4. Operator haste during changeover
+
+================================================================================
+SECTION 5: CORRECTIVE ACTIONS
+================================================================================
+
+IMMEDIATE:
+1. All 150 partially assembled kits disassembled and components segregated
+2. Line cleared and full changeover repeated
+3. Troponin production restarted with enhanced supervision
+4. Operator OP-022 retrained on changeover procedure
+
+PREVENTIVE (CAPA-2024-0045):
+1. Added barcode scanner maintenance to daily start-up checklist
+2. Implemented mandatory scanner function verification before each changeover
+3. Added dual-verification requirement for reagent strip loading
+   (operator + QC inspector)
+4. Reinforced supervisor responsibility for independent checklist verification
+
+EFFECTIVENESS VERIFICATION:
+Monitoring period: October 2024 - January 2025 (4 months)
+Result: No recurrence of component loading errors. All changeover checklists
+verified complete with dual sign-off. Barcode scanner availability at 99.9%.
+CAPA verified effective and closed.
+
+================================================================================
+SECTION 6: LESSONS LEARNED
+================================================================================
+
+1. In-process QC checks are an effective last line of defense for catching
+   assembly errors. The QC inspection point at Station 4 successfully
+   prevented affected product from being released.
+
+2. Barcode scanning is a critical automated control for component
+   verification. Scanner maintenance must be prioritized to ensure this
+   control remains effective.
+
+3. Changeover checklist completion requires not just marking items as done
+   but actual physical verification. Training should emphasize the importance
+   of each individual step.
+
+4. Supervisor sign-off must involve independent verification, not just
+   review of operator's marks.
+
+NOTE: This investigation is relevant context for any future assembly line
+mix-up investigations. The same assembly line (ASM-LINE-01) is used for
+multiple NEXUS products and component mix-up risk exists whenever products
+are changed over.

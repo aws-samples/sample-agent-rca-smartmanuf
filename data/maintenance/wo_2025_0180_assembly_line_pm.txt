@@ -1,0 +1,57 @@
+WORK ORDER: WO-2025-0180
+================================================================================
+
+EQUIPMENT: ASM-LINE-01 (Assembly Line 1 - NEXUS Kit Assembly)
+LOCATION: Building B, Room 201
+TYPE: Preventive Maintenance
+PRIORITY: Routine
+
+DATE OPENED: 2025-07-01
+DATE CLOSED: 2025-07-02
+STATUS: Completed
+
+DESCRIPTION:
+Scheduled monthly preventive maintenance on Assembly Line 1 (ASM-LINE-01),
+used for NEXUS kit assembly operations. This PM covers mechanical, electrical,
+and pneumatic system checks, as well as barcode scanner and labeling system
+verification.
+
+ACTIONS TAKEN:
+1. Conveyor belt tension and alignment - PASSED
+   - Belt tension: 45 N (Spec: 40-50 N)
+   - Alignment deviation: 0.3 mm (Spec: < 1.0 mm)
+2. Pneumatic actuator function test - PASSED
+   - All 12 actuators responding within 50 ms (Spec: < 100 ms)
+3. Component hopper feed mechanism - PASSED
+   - Feed rate: 48 units/min (Spec: 45-55 units/min)
+   - Hopper clearance mechanism: Functional
+4. Barcode scanner calibration - PASSED
+   - Read accuracy: 99.8% (Spec: >= 99.5%)
+   - Scan speed: 120 reads/min
+5. Labeling system verification - PASSED
+   - Label placement accuracy: +/- 0.5 mm (Spec: +/- 1.0 mm)
+6. Safety interlocks test - PASSED
+   - All 6 safety interlocks functional
+7. Electrical system check - PASSED
+   - Insulation resistance: > 10 MOhm
+   - Ground continuity: < 0.1 Ohm
+8. General cleaning and lubrication - Completed
+
+FINDINGS:
+All mechanical, electrical, and pneumatic systems within specification. No
+corrective action required. Equipment released for production use. Barcode
+scanning system fully functional and capable of detecting incorrect components
+if scanning step is performed during changeover.
+
+NOTE: Equipment is mechanically capable of preventing component mix-ups through
+barcode scanning (Item 4 above). However, the effectiveness of this control
+depends on operator compliance with the scanning step in the changeover
+procedure (SOP-ASM-003, Item 5).
+
+TECHNICIAN: Tech-F. Simon (MAINT-012)
+VERIFIED BY: M. Garnier (Production Manager)
+PARTS REPLACED: None
+COST: EUR 180.00
+
+PREVIOUS PM: 2025-06-01 (WO-2025-0155) - All checks passed
+NEXT PM DUE: 2025-08-01

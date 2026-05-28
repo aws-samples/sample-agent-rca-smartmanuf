@@ -1,0 +1,128 @@
+DOCUMENT TITLE: HAZ-CAL-001
+================================================================================
+
+HAZARD ASSESSMENT: NEXUS CK MB Calibration Process
+DOCUMENT ID: HAZ-CAL-001
+REVISION: 2
+EFFECTIVE DATE: 2023-02-01
+PRODUCT: NEXUS CK MB (Reference 30421)
+
+ASSESSOR: J. Martin (Quality Manager)
+REVIEWED BY: A. Laurent (QC Supervisor)
+
+SCOPE:
+This hazard assessment covers potential hazards associated with the NEXUS CK MB
+calibration process, focusing on signal deviations that could impact diagnostic
+accuracy and patient safety.
+
+================================================================================
+HAZARD REGISTER
+================================================================================
+
+HAZARD: HAZ-001
+TITLE: S1 signal too high (above upper specification limit)
+DESCRIPTION:
+  S1 calibration signal exceeds 550 RFV upper specification limit. This
+  results in error code B18 (invalid calibration) on NEXUS analyzers.
+  If undetected and product released, customer instruments would either
+  fail to calibrate (B18 error) or produce artificially elevated CK MB
+  results leading to potential false positive cardiac marker diagnosis.
+
+POTENTIAL CAUSES:
+  1. SPR cone antibody density too high (e.g., supplier lot at upper end
+     of specification or above specification)
+  2. Calibrator S1 concentration above nominal
+  3. Instrument optical sensor over-sensitivity
+  4. Environmental temperature below range (increased fluorescence)
+
+LIKELIHOOD: Unlikely (2/5)
+CONSEQUENCE: Major (4/5) - Patient misdiagnosis risk
+RISK LEVEL: MEDIUM (8/25)
+
+EXISTING CONTROLS:
+  - Incoming SPR inspection (antibody density measurement)
+  - QC calibration verification per SOP-CAL-001
+  - Automated B18 error detection on customer instruments
+  - QC trend analysis with automated alerts
+
+RESIDUAL RISK: Acceptable with current controls
+MONITORING: Continuous QC trend analysis of S1 signal values
+
+--------------------------------------------------------------------------------
+
+HAZARD: HAZ-002
+TITLE: S1 signal too low (below lower specification limit)
+DESCRIPTION:
+  S1 calibration signal falls below 450 RFV lower specification limit. This
+  results in error code B18 (invalid calibration) on NEXUS analyzers.
+  If undetected and product released, customer instruments would either
+  fail to calibrate or produce artificially low CK MB results leading to
+  potential false negative cardiac marker diagnosis (missed cardiac event).
+
+POTENTIAL CAUSES:
+  1. SPR cone antibody density too low or coating degradation
+  2. Calibrator S1 degradation (loss of potency)
+  3. Instrument optical sensor degradation (reduced sensitivity)
+  4. SPR cone storage conditions excursion (temperature, humidity)
+
+LIKELIHOOD: Unlikely (2/5)
+CONSEQUENCE: Critical (5/5) - Missed cardiac event, potential patient death
+RISK LEVEL: HIGH (10/25)
+
+EXISTING CONTROLS:
+  - Incoming SPR inspection
+  - QC calibration verification per SOP-CAL-001
+  - Calibrator stability monitoring program
+  - Equipment PM with optical sensor verification
+  - QC trend analysis with automated alerts
+
+ADDITIONAL CONTROLS IMPLEMENTED:
+  - Lamp life monitoring added per INV-2022-0045 CAPA
+  - Proactive lamp replacement at 1500 hours
+
+RESIDUAL RISK: Acceptable with enhanced controls
+MONITORING: Continuous QC trend analysis; quarterly equipment PM
+
+--------------------------------------------------------------------------------
+
+HAZARD: HAZ-003
+TITLE: S2 signal out of range
+DESCRIPTION:
+  S2 (blank/low calibrator) signal outside 80-120 RFV specification range.
+  Results in error code B19. Indicates potential reagent strip issue or
+  instrument background noise problem.
+
+POTENTIAL CAUSES:
+  1. Reagent strip contamination
+  2. Instrument background noise
+  3. Incorrect S2 calibrator lot
+
+LIKELIHOOD: Remote (1/5)
+CONSEQUENCE: Moderate (3/5)
+RISK LEVEL: LOW (3/25)
+
+EXISTING CONTROLS:
+  - QC calibration verification
+  - Reagent strip in-process testing
+  - Automated B19 error detection
+
+RESIDUAL RISK: Acceptable
+MONITORING: Standard QC testing
+
+================================================================================
+RISK MATRIX SUMMARY
+================================================================================
+
+                    | Negligible | Minor | Moderate | Major | Critical
+  ------------------+------------+-------+----------+-------+---------
+  Almost Certain(5) |            |       |          |       |
+  Likely        (4) |            |       |          |       |
+  Possible      (3) |            |       |          |       |
+  Unlikely      (2) |            |       |          | HAZ-1 | HAZ-2
+  Remote        (1) |            |       | HAZ-3    |       |
+
+HIGH RISK: HAZ-002 (S1 too low) - enhanced controls in place
+MEDIUM RISK: HAZ-001 (S1 too high)
+LOW RISK: HAZ-003 (S2 out of range)
+
+NEXT REVIEW DATE: 2024-02-01

@@ -1,0 +1,13 @@
+test_id,lot_number,test_name,test_date,parameter,value,unit,spec_min,spec_max,status,error_code,instrument_id,analyst,notes
+QC-2025-2001,1011174635,Calibration S1,2025-05-04,S1_signal,189.6,RFV,150.0,250.0,PASS,,NEXUS-003,A. Renaud,
+QC-2025-2002,1011174636,Calibration S1,2025-05-09,S1_signal,207.5,RFV,150.0,250.0,PASS,,NEXUS-004,C. Moreau,
+QC-2025-2003,1011174637,Calibration S1,2025-05-14,S1_signal,180.5,RFV,150.0,250.0,PASS,,NEXUS-003,A. Renaud,
+QC-2025-2004,1011174638,Calibration S1,2025-05-19,S1_signal,187.0,RFV,150.0,250.0,PASS,,NEXUS-004,C. Moreau,
+QC-2025-2005,1011174639,Calibration S1,2025-05-24,S1_signal,196.8,RFV,150.0,250.0,PASS,,NEXUS-003,C. Moreau,
+QC-2025-2006,1011174640,Calibration S1,2025-05-29,S1_signal,419.6,RFV,150.0,250.0,FAIL,B18,NEXUS-004,C. Moreau,Unexpected high signal - wrong cone type suspected
+QC-2025-2007,1011174641,Calibration S1,2025-06-03,S1_signal,208.8,RFV,150.0,250.0,PASS,,NEXUS-003,C. Moreau,
+QC-2025-2008,1011174642,Calibration S1,2025-06-08,S1_signal,207.8,RFV,150.0,250.0,PASS,,NEXUS-004,B. Lecomte,
+QC-2025-2009,1011174643,Calibration S1,2025-06-13,S1_signal,211.3,RFV,150.0,250.0,PASS,,NEXUS-003,C. Moreau,
+QC-2025-2010,1011174644,Calibration S1,2025-06-18,S1_signal,204.7,RFV,150.0,250.0,PASS,,NEXUS-004,B. Lecomte,
+QC-2025-2011,1011174645,Calibration S1,2025-06-23,S1_signal,203.7,RFV,150.0,250.0,PASS,,NEXUS-003,B. Lecomte,
+QC-2025-2012,1011174646,Calibration S1,2025-06-28,S1_signal,190.4,RFV,150.0,250.0,PASS,,NEXUS-004,A. Renaud,

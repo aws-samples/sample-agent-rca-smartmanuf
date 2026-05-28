@@ -1,0 +1,64 @@
+NON-CONFORMITY REPORT: NCR-2023-0100
+================================================================================
+
+PRODUCT: NEXUS CK MB (Reference 30421)
+LOT NUMBER: 1009900940
+DATE OPENED: 2023-07-10
+STATUS: Investigation
+
+TITLE: S1 signal out of specification during calibration verification
+
+DESCRIPTION:
+During routine calibration verification for lot 1009900940, S1 signal reading
+of 572.5 RFV exceeded upper specification limit of 550 RFV. Retest performed
+on 2023-07-10 confirmed OOS result (575.8 RFV).
+
+SYMPTOM:
+S1 signal too strong, exceeding upper specification limit. Error code B18
+(Invalid calibration) generated during instrument calibration.
+
+TEST RESULTS:
+  Initial Test (2023-07-09):
+    S1 Signal: 572.5 RFV (Spec: 450-550 RFV) - FAIL
+    S2 Signal: 101.5 RFV (Spec: 80-120 RFV) - PASS
+    Error Code: B18 (Invalid calibration - S1 out of range)
+    Instrument: NEXUS-001 (EQ-CAL-001)
+    Analyst: QC-003 (A. Laurent)
+
+  Retest (2023-07-10):
+    S1 Signal: 575.8 RFV (Spec: 450-550 RFV) - FAIL
+    S2 Signal: 100.2 RFV (Spec: 80-120 RFV) - PASS
+    Error Code: B18
+    Instrument: NEXUS-001 (EQ-CAL-001)
+    Analyst: QC-005 (M. Petit)
+
+IMPACT ANALYSIS:
+Product cannot be released for distribution. Calibration verification fails
+with error code B18 on customer instruments. Affected lot placed in quarantine
+pending investigation outcome. Estimated financial impact: EUR 45,000 (2,500
+kits at production cost).
+
+PROCESS STEP: Calibration
+
+IMMEDIATE ACTION:
+- Lot 1009900940 quarantined (2023-07-10)
+- Production hold on NEXUS CK MB pending investigation
+- Subsequent lots (1009900941, 1009900942) also show OOS - quarantined
+- Customer notification not required (product not yet released)
+
+PRELIMINARY INVESTIGATION:
+Equipment verification: NEXUS Calibration Station 1 (EQ-CAL-001) last PM on
+2023-06-01 (WO-2023-0150) - all checks passed. Equipment cleared as root
+cause.
+
+Material review: New SPR coating lot SPR-2023-06-002 introduced at this batch
+per CR-2023-0087. Previous lot SPR-2023-05-001 showed normal S1 values.
+Correlation between SPR lot change and S1 shift to be investigated.
+
+ROOT CAUSE: Under investigation - suspected material variation in SPR coating
+
+CAPA REQUIRED: Yes
+CAPA REFERENCE: Pending investigation completion
+
+OPENED BY: A. Laurent (QC-003)
+REVIEWED BY: J. Martin (Quality Manager)

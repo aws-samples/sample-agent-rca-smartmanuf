@@ -1,0 +1,45 @@
+WORK ORDER: WO-2023-0150
+================================================================================
+
+EQUIPMENT: EQ-CAL-001 (NEXUS Calibration Station 1)
+TYPE: Preventive Maintenance
+PRIORITY: Routine
+
+DATE OPENED: 2023-06-01
+DATE CLOSED: 2023-06-02
+STATUS: Completed
+
+DESCRIPTION:
+Scheduled quarterly preventive maintenance on NEXUS Calibration Station 1.
+This PM covers full functional verification of the calibration system including
+optical sensors, temperature control, mechanical alignment, and software
+validation.
+
+ACTIONS TAKEN:
+1. Full calibration verification - PASSED
+2. Optical sensor cleaning and verification - PASSED
+   - Fluorescence detector sensitivity: 98.2% (Spec: >= 95%)
+   - Background noise: 2.1 RFV (Spec: < 5.0 RFV)
+3. Temperature probe calibration - PASSED (deviation < 0.1 deg C)
+   - Incubation temperature: 36.9 deg C (Spec: 37.0 +/- 0.5 deg C)
+4. Software version check - Current (v3.2.1)
+5. Mechanical alignment verification - PASSED
+   - Cone positioning accuracy: +/- 0.02 mm (Spec: +/- 0.1 mm)
+6. Reference standard verification - PASSED
+   - S1 reference: 502.3 RFV (Expected: 500 +/- 25 RFV)
+   - S2 reference: 99.8 RFV (Expected: 100 +/- 10 RFV)
+
+FINDINGS:
+All checks within specification. No corrective action required.
+Equipment released for production use.
+
+INSTRUMENT QUALIFICATION STATUS: Current
+LAST IQ/OQ/PQ: 2023-01-15 (Annual requalification)
+
+TECHNICIAN: Tech-M. Bernard (MAINT-007)
+VERIFIED BY: P. Dubois (Production Manager)
+PARTS REPLACED: None
+COST: EUR 250.00
+
+PREVIOUS PM: 2023-03-01 (WO-2023-0098) - All checks passed
+NEXT PM DUE: 2023-09-01

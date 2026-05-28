@@ -1,0 +1,158 @@
+DOCUMENT TITLE: FMEA-CKMB-001
+================================================================================
+
+FAILURE MODE AND EFFECTS ANALYSIS (FMEA)
+PRODUCT: NEXUS CK MB (Reference 30421)
+DOCUMENT ID: FMEA-CKMB-001
+REVISION: 3
+EFFECTIVE DATE: 2023-01-15
+PROCESS: NEXUS CK MB Manufacturing and Calibration
+
+TEAM MEMBERS:
+  J. Martin (Quality Manager) - Lead
+  P. Dubois (Production Manager)
+  A. Laurent (QC Supervisor)
+  M. Petit (QC Analyst)
+  Tech-M. Bernard (Maintenance)
+
+RISK SCORING CRITERIA:
+  Severity (S):    1 = Negligible, 10 = Catastrophic (patient harm)
+  Occurrence (O):  1 = Remote, 10 = Almost certain
+  Detection (D):   1 = Certain detection, 10 = No detection possible
+  RPN = S x O x D  (Risk Priority Number)
+  RPN Threshold:   > 100 = High risk (immediate action required)
+                   50-100 = Medium risk (action plan required)
+                   < 50 = Low risk (monitor)
+
+================================================================================
+FMEA TABLE
+================================================================================
+
+ENTRY: FMEA-CKMB-001
+PROCESS STEP: SPR Receipt and Inspection
+POTENTIAL FAILURE MODE: SPR coating variation - antibody density outside
+  nominal range but within specification
+POTENTIAL EFFECT: Signal out of specification during calibration verification
+  (S1 too high or too low)
+SEVERITY (S): 8
+  Justification: Product cannot be released; potential customer calibration
+  failures if not caught
+POTENTIAL CAUSE: Lot-to-lot variation in supplier coating process; antibody
+  density at extreme ends of specification range
+OCCURRENCE (O): 3
+  Justification: Qualified supplier with established process; variation
+  possible but infrequent between production batches
+CURRENT CONTROLS: Incoming inspection per SOP-SPR-001 (antibody density
+  measurement, COA review); specification limits 2.0-2.5 mg/mL
+DETECTION (D): 4
+  Justification: Incoming inspection measures antibody density but current
+  specification allows wide range; borderline values at upper/lower spec
+  may not trigger review unless exceeding limits
+RPN: 96
+ACTION RECOMMENDED: Consider tightening incoming specification or adding
+  alert limits for values at extreme ends of specification range
+ACTION OWNER: A. Laurent (QC Supervisor)
+TARGET DATE: 2023-06-30
+
+--------------------------------------------------------------------------------
+
+ENTRY: FMEA-CKMB-002
+PROCESS STEP: Calibration Verification
+POTENTIAL FAILURE MODE: Calibration drift - invalid calibration (error code B18)
+POTENTIAL EFFECT: Product fails QC release testing; customer instruments
+  unable to calibrate; potential for erroneous patient results if undetected
+SEVERITY (S): 9
+  Justification: Direct impact on diagnostic accuracy; patient safety risk
+  if calibration failure not detected
+POTENTIAL CAUSE: Equipment optical sensor degradation; SPR coating variation;
+  calibrator degradation; environmental conditions
+OCCURRENCE (O): 2
+  Justification: Multiple potential causes but each individually rare;
+  historical occurrence: 1 event in past 3 years (INV-2022-0045)
+CURRENT CONTROLS: QC calibration verification per SOP-CAL-001; trend analysis
+  system with automated alerts; quarterly PM on calibration stations
+DETECTION (D): 5
+  Justification: QC testing will detect failure at lot level; however, root
+  cause identification requires investigation. Trend analysis may detect
+  gradual drift before OOS.
+RPN: 90
+ACTION RECOMMENDED: Implement enhanced trend analysis with tighter alert
+  limits; add correlation analysis between SPR lot and signal values
+ACTION OWNER: M. Petit (QC Analyst)
+TARGET DATE: 2023-03-31
+
+--------------------------------------------------------------------------------
+
+ENTRY: FMEA-CKMB-003
+PROCESS STEP: Strip Assembly
+POTENTIAL FAILURE MODE: Reagent strip defect - incomplete reagent deposition
+POTENTIAL EFFECT: Reduced assay sensitivity; potential false negative results
+SEVERITY (S): 9
+POTENTIAL CAUSE: Dispensing nozzle clog; reagent viscosity variation;
+  environmental temperature excursion
+OCCURRENCE (O): 1
+CURRENT CONTROLS: In-process visual inspection; automated fill volume check;
+  QC functional testing
+DETECTION (D): 3
+RPN: 27
+ACTION RECOMMENDED: None (low risk)
+
+--------------------------------------------------------------------------------
+
+ENTRY: FMEA-CKMB-004
+PROCESS STEP: Kit Assembly
+POTENTIAL FAILURE MODE: Wrong component in kit - incorrect SPR cones or
+  reagent strips from different product
+POTENTIAL EFFECT: Completely invalid test results; wrong analyte measured;
+  patient receives incorrect diagnosis
+SEVERITY (S): 10
+  Justification: Catastrophic - patient receives completely wrong test result
+POTENTIAL CAUSE: Incomplete line clearance during product changeover;
+  operator error in component loading; labeling error
+OCCURRENCE (O): 2
+  Justification: Changeover procedures and controls in place; historical
+  near-miss (INV-2024-0067) but no customer-reaching events
+CURRENT CONTROLS: Line clearance checklist (SOP-ASM-003); barcode scanning;
+  in-process QC inspection; first article inspection
+DETECTION (D): 3
+  Justification: Multiple detection points (barcode scan, visual inspection,
+  QC check) provide layered defense
+RPN: 60
+ACTION RECOMMENDED: Reinforce changeover procedure compliance; consider
+  automated component verification at each assembly station
+ACTION OWNER: P. Dubois (Production Manager)
+TARGET DATE: 2023-09-30
+
+--------------------------------------------------------------------------------
+
+ENTRY: FMEA-CKMB-005
+PROCESS STEP: Labeling and Packaging
+POTENTIAL FAILURE MODE: Mislabeling - wrong product label or lot number
+POTENTIAL EFFECT: Customer confusion; traceability loss; potential regulatory
+  impact
+SEVERITY (S): 7
+POTENTIAL CAUSE: Label roll changeover error; printer malfunction
+OCCURRENCE (O): 1
+CURRENT CONTROLS: Automated label verification (vision system); barcode
+  reconciliation at packaging
+DETECTION (D): 2
+RPN: 14
+ACTION RECOMMENDED: None (low risk)
+
+================================================================================
+RISK SUMMARY
+================================================================================
+
+  FMEA Entry | Process Step       | Failure Mode              | RPN | Risk Level
+  -----------+--------------------+---------------------------+-----+-----------
+  CKMB-001   | SPR Receipt        | SPR coating variation     |  96 | MEDIUM
+  CKMB-002   | Calibration        | Calibration drift (B18)   |  90 | MEDIUM
+  CKMB-003   | Strip Assembly     | Reagent strip defect      |  27 | LOW
+  CKMB-004   | Kit Assembly       | Wrong component in kit    |  60 | MEDIUM
+  CKMB-005   | Labeling/Packaging | Mislabeling               |  14 | LOW
+
+HIGH RISK ITEMS (RPN > 100): None
+MEDIUM RISK ITEMS (RPN 50-100): 3 (CKMB-001, CKMB-002, CKMB-004)
+LOW RISK ITEMS (RPN < 50): 2 (CKMB-003, CKMB-005)
+
+NEXT REVIEW DATE: 2024-01-15

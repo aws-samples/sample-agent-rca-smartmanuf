@@ -1,0 +1,82 @@
+NON-CONFORMITY REPORT: NCR-2025-0050
+================================================================================
+
+PRODUCT: NEXUS B2M (Reference 30420)
+LOT NUMBER: 1011174640
+DATE OPENED: 2025-07-18
+STATUS: Investigation - Recall Initiated
+
+TITLE: Customer complaint - wrong cone sachets in NEXUS B2M kit
+
+DESCRIPTION:
+Customer complaint received from Hospital Saint-Louis, Paris (Customer ID:
+CUST-FR-0456). Laboratory technician reported that SPR cone sachets inside
+NEXUS B2M kit (lot 1011174640) were labeled as NEXUS CK MB (Reference 30421).
+Visual inspection confirmed the presence of NEXUS CK MB cones (SPR-CKMB-001,
+no cap color identifier) instead of expected NEXUS B2M cones (SPR-B2M-001,
+blue cap).
+
+CUSTOMER DETAILS:
+  Customer: Hospital Saint-Louis, Paris
+  Customer ID: CUST-FR-0456
+  Complaint Date: 2025-07-17
+  Complaint Reference: COMPL-2025-0892
+  Contact: Dr. M. Beaumont (Laboratory Director)
+
+AFFECTED PRODUCT:
+  Product: NEXUS B2M (Reference 30420)
+  Lot Number: 1011174640
+  Manufacturing Date: 2025-07-12
+  Expiry Date: 2027-01-12
+  Quantity Manufactured: 2,500 kits
+  Quantity Distributed: 1,200 kits (48% of batch)
+  Distribution Markets: France, Belgium, Switzerland
+
+SYMPTOM:
+NEXUS CK MB SPR cones (Reference 30421, component SPR-CKMB-001) found inside
+NEXUS B2M kits. Wrong cones are coated with anti-CK MB antibodies instead of
+anti-Beta-2 microglobulin antibodies. Cones are physically identical in shape
+but have different antibody coating and different cap color (CK MB: no color
+identifier; B2M: blue cap).
+
+IMPACT ANALYSIS:
+CRITICAL - Patient Safety Risk
+- Wrong antibody coating will produce erroneous B2M test results
+- Patients may receive incorrect diagnosis based on invalid results
+- No analytical detection possible at customer site (instrument accepts
+  wrong cones without error)
+- Risk Classification: Class I (Serious - potential patient harm)
+
+IMMEDIATE ACTION:
+- Product recall initiated for lot 1011174640 (2025-07-18)
+- Urgent field safety notice sent to all customers who received affected lot
+- Remaining undistributed stock (1,300 kits) quarantined and segregated
+- All NEXUS B2M lots manufactured on 2025-07-12 flagged for inspection
+- Assembly line ASM-LINE-01 placed on hold pending investigation
+- Regulatory notification submitted to ANSM (French health authority)
+
+PRELIMINARY INVESTIGATION:
+Assembly records for 2025-07-12 show that NEXUS CK MB (Reference 30421) was
+produced on ASM-LINE-01 immediately before NEXUS B2M (Reference 30420).
+Changeover log shows changeover time of 12 minutes (SOP-ASM-003 requires
+minimum 30 minutes). Line clearance checklist was not completed.
+
+Operator: OP-015 (J. Renard) - reported production schedule pressure due to
+rush order for NEXUS B2M.
+
+ROOT CAUSE: Under investigation - suspected incomplete line clearance during
+product changeover on assembly line ASM-LINE-01
+
+CAPA REQUIRED: Yes
+CAPA REFERENCE: CAPA-2025-0018 (opened 2025-07-19)
+
+RECALL DETAILS:
+  Recall Classification: Class I
+  Recall Number: RCL-2025-0012
+  Recall Initiated: 2025-07-18
+  Regulatory Agency: ANSM (Agence Nationale de Securite du Medicament)
+  Recall Effectiveness Check Due: 2025-08-18
+
+OPENED BY: S. Moreau (Customer Quality)
+REVIEWED BY: L. Fontaine (Quality Manager)
+ESCALATED TO: V. Rousseau (Quality Director)

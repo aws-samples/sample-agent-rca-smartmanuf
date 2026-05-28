@@ -1,0 +1,67 @@
+MACHINE STOP EVENT: STOP-2025-0030
+================================================================================
+
+EQUIPMENT: ASM-LINE-01 (Assembly Line 1 - NEXUS Kit Assembly)
+LOCATION: Building B, Room 201
+EVENT TYPE: Product Changeover
+PRIORITY: Normal
+
+DATE: 2025-07-12
+STOP TIME: 14:35
+RESTART TIME: 14:47
+TOTAL STOP DURATION: 12 minutes
+
+STATUS: Completed - ANOMALY DETECTED (Post-event review)
+
+CHANGEOVER DETAILS:
+  Previous Product: NEXUS CK MB (Reference 30421)
+  Previous Lot: 1011174639 (CK MB production completed at 14:30)
+  Next Product: NEXUS B2M (Reference 30420)
+  Next Lot: 1011174640 (B2M production started at 14:47)
+
+  Changeover Time: 12 minutes
+  SOP Required Minimum: 30 minutes (per SOP-ASM-003 Rev 2)
+  DEVIATION: Changeover time 18 minutes below minimum requirement
+
+OPERATOR: OP-015 (J. Renard)
+SUPERVISOR ON DUTY: SUP-008 (R. Marchand) - Not present during changeover
+
+REASON FOR SHORT CHANGEOVER:
+"Production schedule pressure - rush order for NEXUS B2M. Customer Hospital
+Saint-Louis requires urgent delivery. Supervisor authorized verbal approval
+to expedite changeover."
+
+LINE CLEARANCE CHECKLIST:
+  SOP-ASM-003 Rev 2 requires completion of 8-item clearance checklist before
+  production restart.
+
+  Item 1: Remove all previous product components from line    - NOT COMPLETED
+  Item 2: Verify hopper emptied of previous SPR cones         - NOT COMPLETED
+  Item 3: Clean all contact surfaces                          - COMPLETED
+  Item 4: Verify correct labeling materials loaded             - COMPLETED
+  Item 5: Scan component barcodes for next product             - NOT COMPLETED
+  Item 6: Verify correct reagent strips loaded                 - COMPLETED
+  Item 7: First article inspection                             - NOT COMPLETED
+  Item 8: Supervisor sign-off                                  - NOT COMPLETED
+
+  CHECKLIST STATUS: NOT COMPLETED (3 of 8 items completed)
+
+COMPONENT DETAILS AT CHANGEOVER:
+  SPR Cone Hopper Status: Not verified at changeover
+  Previous product cones (SPR-CKMB-001): Quantity remaining in hopper unknown
+  Next product cones (SPR-B2M-001): Loaded into secondary hopper
+  NOTE: SPR cones for CK MB and B2M are physically similar in shape.
+  Differentiation: B2M cones have blue cap; CK MB cones have no cap color.
+  Without visual inspection or barcode scan, mix-up is possible.
+
+POST-EVENT REVIEW (2025-07-19):
+Following customer complaint (NCR-2025-0050), review of this stop event
+identified the short changeover and incomplete clearance checklist as the
+probable root cause for NEXUS CK MB cones being present in NEXUS B2M kits.
+The 12-minute changeover did not allow sufficient time for proper line
+clearance, and the incomplete checklist (items 1, 2, 5, 7, 8 not completed)
+meant that remaining CK MB cones in the hopper were not detected before
+B2M production started.
+
+CORRECTIVE ACTION REFERENCE: CAPA-2025-0018
+RELATED NCR: NCR-2025-0050

@@ -1,0 +1,65 @@
+NON-CONFORMITY REPORT: NCR-2023-0101
+================================================================================
+
+PRODUCT: NEXUS CK MB (Reference 30421)
+LOT NUMBER: 1009900941
+DATE OPENED: 2023-07-13
+STATUS: Investigation
+
+TITLE: S1 signal out of specification - second consecutive batch
+
+DESCRIPTION:
+During calibration verification for lot 1009900941, S1 signal reading of
+578.3 RFV exceeded upper specification limit of 550 RFV. This is the second
+consecutive batch showing S1 OOS results (see NCR-2023-0100 for first
+occurrence on lot 1009900940).
+
+RELATED NCR: NCR-2023-0100 (Lot 1009900940, S1 = 572.5 / 575.8 RFV)
+
+SYMPTOM:
+S1 signal too strong, exceeding upper specification limit. Error code B18
+(Invalid calibration) generated. Pattern consistent with NCR-2023-0100 -
+systematic upward shift in S1 signal.
+
+TEST RESULTS:
+  Initial Test (2023-07-13):
+    S1 Signal: 578.3 RFV (Spec: 450-550 RFV) - FAIL
+    S2 Signal: 100.9 RFV (Spec: 80-120 RFV) - PASS
+    Error Code: B18 (Invalid calibration - S1 out of range)
+    Instrument: NEXUS-002 (EQ-CAL-002)
+    Analyst: QC-003 (A. Laurent)
+
+NOTE: Test performed on different instrument (NEXUS-002 vs NEXUS-001 for
+NCR-2023-0100) to rule out instrument-specific bias. Same OOS pattern
+observed, further supporting material-related root cause.
+
+IMPACT ANALYSIS:
+Second consecutive batch affected. Combined quarantined quantity: approximately
+5,000 kits. Production of NEXUS CK MB remains on hold. Pattern confirmation
+increases urgency of investigation.
+
+PROCESS STEP: Calibration
+
+IMMEDIATE ACTION:
+- Lot 1009900941 quarantined (2023-07-13)
+- Production hold on NEXUS CK MB maintained
+- All remaining batches using SPR lot SPR-2023-06-002 flagged for enhanced
+  monitoring
+- Escalation to Quality Director
+
+PATTERN ANALYSIS:
+Two consecutive batches (1009900940, 1009900941) both show S1 signal
+approximately 25-30 RFV above upper specification limit. S2 signal remains
+normal in both batches. Both batches use SPR coating lot SPR-2023-06-002,
+which was qualified under CR-2023-0087 and introduced starting with batch
+1009900940. All prior batches using SPR lot SPR-2023-05-001 showed normal S1
+values (range: 495-510 RFV).
+
+ROOT CAUSE: Under investigation - material variation in SPR coating lot
+SPR-2023-06-002 (elevated antibody binding capacity)
+
+CAPA REQUIRED: Yes (linked to NCR-2023-0100 CAPA)
+CAPA REFERENCE: Pending investigation completion
+
+OPENED BY: A. Laurent (QC-003)
+REVIEWED BY: J. Martin (Quality Manager)

@@ -1,0 +1,54 @@
+CHANGE REQUEST: CR-2023-0087
+================================================================================
+
+TITLE: Qualification of new SPR coating batch SPR-2023-06-002
+
+PRODUCT AFFECTED: NEXUS CK MB (Reference 30421)
+
+CHANGE TYPE: Material
+CHANGE LEVEL: MEDIUM
+
+DATES:
+  Submission Date: 2023-06-15
+  Approval Date: 2023-06-20
+  Implementation Date: 2023-06-25
+  First Lot After Change: 1009900940
+
+DESCRIPTION:
+Approve use of new SPR coating batch SPR-2023-06-002 from BioCoating Solutions
+for NEXUS CK MB production. Previous lot SPR-2023-05-001 depleted.
+
+JUSTIFICATION:
+New production batch received from qualified supplier. Certificate of Analysis
+(COA) reviewed and meets specifications. Incoming inspection completed per
+SOP-SPR-001.
+
+RISK ANALYSIS:
+New production batch from qualified supplier. COA values within specifications.
+Potential for slight variation in antibody binding capacity between production
+batches. Antibody density measured at 2.4 mg/mL (spec: 2.0-2.5 mg/mL) -
+at upper end of specification range.
+
+INCOMING INSPECTION RESULTS:
+  Lot ID: SPR-2023-06-002
+  Supplier: BioCoating Solutions (SUP-BC-001)
+  Antibody Density: 2.4 mg/mL (Spec: 2.0-2.5 mg/mL) - PASS
+  Binding Capacity: 98.5% (Spec: >= 95%) - PASS
+  Visual Inspection: Conform - PASS
+  Sterility: Pass
+  Previous Lot: SPR-2023-05-001 (Antibody Density: 2.1 mg/mL)
+
+NOTE: Antibody density is at the upper end of the specification range (2.4 vs
+previous lot 2.1 mg/mL). This difference is within acceptable limits per
+SPEC-SPR-CKMB but represents a 14% increase in antibody density compared to
+the previous production lot.
+
+VALIDATION REQUIRED: No
+AFFECTED DOCUMENTS: SOP-SPR-001, SPEC-SPR-CKMB, INCOMING-INSP-LOG
+
+APPROVAL:
+  Quality Manager: Approved - J. Martin (2023-06-20)
+  Production Manager: Approved - P. Dubois (2023-06-20)
+  Regulatory Affairs: Not Required (like-for-like material change)
+
+STATUS: Approved and Implemented

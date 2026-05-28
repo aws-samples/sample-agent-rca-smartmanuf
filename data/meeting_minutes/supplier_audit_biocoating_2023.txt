@@ -1,0 +1,145 @@
+DOCUMENT TITLE: MOM-SUP-2023-009
+================================================================================
+
+MEETING MINUTES: Supplier Audit - BioCoating Solutions
+DOCUMENT ID: MOM-SUP-2023-009
+DATE: 2023-09-15
+LOCATION: BioCoating Solutions, Lyon, France
+TYPE: Routine Supplier Quality Audit
+
+ATTENDEES:
+  MedTech Diagnostics:
+    J. Martin (Quality Manager) - Audit Lead
+    A. Laurent (QC Supervisor)
+    N. Dupont (Supplier Quality Engineer)
+
+  BioCoating Solutions:
+    Dr. E. Faure (Technical Director)
+    C. Blanc (Quality Manager)
+    H. Morel (Production Manager)
+
+================================================================================
+1. AUDIT SCOPE
+================================================================================
+
+Annual supplier quality audit of BioCoating Solutions, qualified supplier of
+SPR (Solid Phase Receptacle) cones for NEXUS immunoassay products. Audit
+covers manufacturing process, quality management system, and specific review
+of lot SPR-2023-06-002 linked to NEXUS CK MB calibration issue.
+
+================================================================================
+2. AGENDA AND DISCUSSION
+================================================================================
+
+2.1 Quality Management System Review
+    - ISO 13485:2016 certification current (expires 2025-03)
+    - No major findings from last external audit (June 2023)
+    - Minor finding: Document control - some work instructions outdated
+    - STATUS: Satisfactory
+
+2.2 Manufacturing Process Review
+    - Coating process parameters reviewed
+    - Antibody immobilization protocol unchanged since qualification
+    - Process capability study: Cpk = 1.2 for antibody density (acceptable
+      but not robust)
+    - Coating uniformity: CV = 5.8% (spec: < 8%)
+    - STATUS: Acceptable with observations
+
+2.3 Lot SPR-2023-06-002 Review (Specific Focus)
+    J. Martin presented the NEXUS CK MB calibration issue:
+    - Batches 1009900940 onward showed elevated S1 signal (>550 RFV)
+    - Root cause traced to SPR lot SPR-2023-06-002
+    - Antibody density at 2.4 mg/mL (within spec 2.0-2.5 but high)
+
+    BioCoating Solutions response (Dr. E. Faure):
+    - Acknowledged lot SPR-2023-06-002 was at upper end of specification
+    - Explained variation due to new antibody source material batch
+    - Antibody raw material lot (AB-2023-04) had higher specific activity
+      than previous lot (AB-2023-01)
+    - Internal specification for antibody density: 1.8-2.6 mg/mL
+      (wider than MedTech Diagnostics incoming spec of 2.0-2.5 mg/mL)
+
+    DISCUSSION:
+    J. Martin requested BioCoating Solutions tighten internal specification
+    to align with MedTech Diagnostics downstream process sensitivity. Proposed internal
+    target of 2.0-2.3 mg/mL with alert at 2.3 mg/mL.
+
+    Dr. Faure agreed to evaluate feasibility and provide response by
+    2023-10-15.
+
+    ACTION ITEM: BioCoating Solutions to evaluate tighter internal
+    specification for NEXUS CK MB SPR cones (Target: 2.0-2.3 mg/mL)
+    Owner: Dr. E. Faure | Due: 2023-10-15
+
+2.4 Process Controls and Monitoring
+    - Statistical process control charts reviewed
+    - Moving range chart shows lot-to-lot variation in antibody density
+    - No trend or special cause detected in process
+    - Variation attributed to antibody raw material variability
+    - STATUS: Acceptable
+
+2.5 Corrective Actions from Previous Audit (2022)
+    - SCAR-2022-015 (Endotoxin testing frequency): Closed, verified effective
+    - SCAR-2022-016 (COA delivery timeliness): Closed, improved from 5 days
+      to 2 days average delivery
+    - STATUS: All closed
+
+================================================================================
+3. AUDIT FINDINGS
+================================================================================
+
+MAJOR FINDINGS: None
+
+MINOR FINDINGS:
+  F-2023-001: Internal antibody density specification (1.8-2.6 mg/mL) is
+  wider than customer specification (2.0-2.5 mg/mL). This allows production
+  of lots that technically pass internal QC but may cause downstream
+  performance issues at customer.
+  Classification: Minor Non-Conformity
+  Required Action: Align internal specification with customer requirements
+
+OBSERVATIONS:
+  O-2023-001: Process capability (Cpk = 1.2) for antibody density is
+  adequate but not robust. Recommend process improvement to achieve Cpk > 1.5.
+
+  O-2023-002: Raw material (antibody) lot-to-lot variability is the primary
+  driver of finished product (SPR cone) variability. Consider enhanced
+  incoming inspection of antibody raw material or qualification of second
+  source.
+
+================================================================================
+4. ACTION ITEMS
+================================================================================
+
+  # | Action                                          | Owner        | Due
+  --+-------------------------------------------------+--------------+----------
+  1 | Evaluate tighter antibody density spec           | Dr. E. Faure | 2023-10-15
+  2 | Respond to finding F-2023-001 with SCAR          | C. Blanc     | 2023-10-01
+  3 | Provide process improvement plan for Cpk > 1.5   | H. Morel     | 2023-12-01
+  4 | Share antibody raw material qualification data    | Dr. E. Faure | 2023-10-15
+  5 | Schedule follow-up review meeting                 | N. Dupont    | 2023-11-15
+
+================================================================================
+5. SUPPLIER RATING
+================================================================================
+
+Overall audit score: 82/100 (Previous: 90/100)
+Rating: QUALIFIED (conditional on closure of F-2023-001)
+
+Scoring breakdown:
+  Quality System: 18/20
+  Manufacturing: 16/20
+  Process Controls: 15/20 (deduction for Cpk and specification gap)
+  Corrective Actions: 18/20
+  Documentation: 15/20
+
+================================================================================
+6. NEXT AUDIT
+================================================================================
+
+Next scheduled audit: September 2024
+Type: Annual routine + follow-up on F-2023-001 closure
+
+MINUTES PREPARED BY: N. Dupont (Supplier Quality Engineer)
+APPROVED BY: J. Martin (Quality Manager)
+DATE: 2023-09-20
