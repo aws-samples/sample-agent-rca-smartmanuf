@@ -1,0 +1,143 @@
+DOCUMENT TITLE: QR-NEXUS-2023
+================================================================================
+
+ANNUAL QUALITY REVIEW: NEXUS Product Family
+DOCUMENT ID: QR-NEXUS-2023
+PERIOD: January 2023 - December 2023
+PREPARED BY: J. Martin (Quality Manager)
+APPROVED BY: V. Ross (Quality Director)
+DATE: 2024-02-15
+
+================================================================================
+1. EXECUTIVE SUMMARY
+================================================================================
+
+This annual quality review covers the NEXUS immunoassay product family
+manufactured during calendar year 2023. The review encompasses production
+performance, quality metrics, customer complaints, regulatory compliance,
+and corrective/preventive actions for key NEXUS products.
+
+Key highlights:
+- Overall batch release rate: 94.2% (target: >= 95%) - below target due to
+  NEXUS CK MB calibration issues in Q3
+- Customer complaint rate: 0.12% (target: < 0.15%) - within target
+- One significant quality event: NEXUS CK MB Primary OOS investigation
+- All CAPA actions from 2022 verified effective
+
+================================================================================
+2. PRODUCT PERFORMANCE SUMMARY
+================================================================================
+
+2.1 NEXUS CK MB (Reference 30421)
+    Total batches manufactured: 15
+    Batches released: 10 (66.7%)
+    Batches quarantined: 5 (33.3%)
+    Batches rejected: 0
+
+    SIGNIFICANT EVENT: Starting July 2023, multiple consecutive batches
+    showed primary calibration signal exceeding upper specification limit (550 SIU).
+    Investigation identified root cause as CART coating batch variation
+    (elevated capture reagent density in lot CART-2023-06-002). See NCR-2023-0100,
+    NCR-2023-0101.
+
+    CAPA: CAPA-2023-0058 (CART coating variation) - corrective actions
+    implemented, effectiveness verification in progress.
+
+2.2 NEXUS B2M (Reference 30420)
+    Total batches manufactured: 12
+    Batches released: 12 (100%)
+    Batches quarantined: 0
+    Batches rejected: 0
+
+    No significant quality events during 2023 review period. All batches
+    met specification.
+
+    NOTE: Assembly line changeover procedures were reviewed and updated in
+    Q1 2024 following historical near-miss on NEXUS Troponin (INV-2024-0067).
+    NEXUS B2M shares assembly line ASM-LINE-01 with multiple products.
+
+2.3 NEXUS Troponin (Reference 30422)
+    Total batches manufactured: 18
+    Batches released: 17 (94.4%)
+    Batches quarantined: 1 (5.6%)
+    Batches rejected: 0
+
+    One batch quarantined due to reagent card fill volume borderline result.
+    Retested and released after investigation confirmed within specification.
+
+2.4 NEXUS D-Dimer (Reference 30425)
+    Total batches manufactured: 20
+    Batches released: 20 (100%)
+    No significant quality events.
+
+================================================================================
+3. NON-CONFORMITY SUMMARY
+================================================================================
+
+Total NCRs opened in 2023: 8
+Total NCRs closed in 2023: 6
+NCRs carried over to 2024: 2 (NCR-2023-0100, NCR-2023-0101)
+
+NCR Breakdown by Category:
+  Materials: 3 (including 2 related to NEXUS CK MB CART lot)
+  Equipment: 2
+  Process: 2
+  Documentation: 1
+
+Most Significant: NCR-2023-0100 and NCR-2023-0101 (NEXUS CK MB Primary OOS)
+  Root cause: CART coating lot CART-2023-06-002 capture reagent density at upper end
+  of specification (2.4 mg/mL) causing elevated primary signal.
+
+================================================================================
+4. CHANGE CONTROL SUMMARY
+================================================================================
+
+Total change requests in 2023: 12
+Change requests by level:
+  MAJOR: 1 (new equipment qualification)
+  MEDIUM: 3 (including CR-2023-0087 - CART lot qualification)
+  MINOR: 8 (procedure updates, form revisions)
+
+Notable: CR-2023-0087 - Qualification of CART coating batch CART-2023-06-002.
+This change is linked to the subsequent Primary OOS events. Post-event review
+identified that the change risk analysis should have included enhanced
+initial monitoring for the first batches using the new CART lot.
+
+================================================================================
+5. SUPPLIER QUALITY
+================================================================================
+
+Surface Coating Solutions (sensor cartridge supplier):
+  Supplier rating: 92/100 (Qualified)
+  On-time delivery: 98%
+  Quality score: 88/100 (down from 95/100 in 2022)
+  Audit conducted: September 2023 (see meeting minutes)
+
+  Issue: CART lot CART-2023-06-002 linked to NEXUS CK MB calibration problem.
+  Capture reagent density within specification but at upper extreme. Supplier
+  agreed to implement tighter internal control limits.
+
+================================================================================
+6. CORRECTIVE AND PREVENTIVE ACTIONS
+================================================================================
+
+CAPAs from 2022 (effectiveness verification):
+  CAPA-2022-0032 (Calibration station lamp monitoring): EFFECTIVE - No
+  recurrence of primary signal drift. Closed.
+
+CAPAs opened in 2023:
+  CAPA-2023-0058 (CART coating variation): In progress - Corrective actions
+  include tighter incoming inspection criteria and supplier process controls.
+
+================================================================================
+7. RECOMMENDATIONS FOR 2024
+================================================================================
+
+1. Tighten incoming inspection specification for sensor cartridge capture reagent density
+   (propose 2.0-2.3 mg/mL for CK MB, reducing current 2.0-2.5 range)
+2. Implement enhanced monitoring for first 3 batches after any CART lot change
+3. Review assembly line changeover procedures for all shared equipment
+4. Conduct focused supplier audit of Surface Coating Solutions coating process
+5. Evaluate automated line clearance verification systems for assembly lines
+
+NEXT REVIEW: February 2025 (for calendar year 2024)

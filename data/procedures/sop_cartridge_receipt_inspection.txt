@@ -1,0 +1,110 @@
+DOCUMENT TITLE: SOP-CART-001
+================================================================================
+
+STANDARD OPERATING PROCEDURE
+TITLE: Incoming Inspection of Sensor Cartridges for NEXUS Immunoassays
+DOCUMENT ID: SOP-CART-001
+REVISION: 4
+EFFECTIVE DATE: 2022-09-01
+REVIEW DATE: 2024-09-01
+
+DEPARTMENT: Quality Control - Incoming Inspection
+AUTHOR: A. Lawson (QC Supervisor)
+APPROVED BY: J. Martin (Quality Manager)
+
+1. PURPOSE
+   This procedure defines the incoming inspection requirements for Sensor
+   Cartridge units used in NEXUS immunoassay kit production. sensor cartridges
+   are critical components coated with specific capture capture reagents that
+   determine assay performance.
+
+2. SCOPE
+   Applies to all sensor cartridge lots received from approved suppliers for use in
+   NEXUS product manufacturing. This includes but is not limited to:
+   - Sensor Cartridges NEXUS CK MB (CART-CKMB-001)
+   - Sensor Cartridges NEXUS B2M (CART-B2M-001)
+   - Sensor Cartridges NEXUS Troponin (CART-TROP-001)
+
+3. REFERENCES
+   - SPEC-CART-CKMB: Sensor Cartridge Specification for NEXUS CK MB
+   - SPEC-CART-B2M: Sensor Cartridge Specification for NEXUS B2M
+   - SOP-QC-010: General Incoming Inspection Procedure
+   - ISO 13485:2016 Section 7.4 (Purchasing)
+
+4. DEFINITIONS
+   CART: Sensor Cartridge - plastic cartridge coated with capture capture reagents
+   COA: Certificate of Analysis
+   AQL: Acceptable Quality Level
+
+5. REQUIRED EQUIPMENT
+   - UV-Vis Spectrophotometer (EQ-SPEC-001)
+   - Analytical Balance (EQ-BAL-003), calibrated
+   - Optical Microscope (EQ-MIC-001), 10x-40x magnification
+   - Barcode Scanner (EQ-SCAN-005)
+
+6. PROCEDURE
+
+   6.1 Receipt and Documentation
+       a) Verify shipment matches purchase order (PO reference, quantity)
+       b) Check packaging integrity (no damage, temperature indicator OK)
+       c) Record supplier COA data in Incoming Inspection Log
+       d) Assign internal lot tracking number
+
+   6.2 Visual Inspection (AQL = 0.65, Level II)
+       a) Sample per ANSI/ASQ Z1.4 sampling plan
+       b) Inspect for:
+          - Physical defects (cracks, chips, deformation)
+          - Coating uniformity (no bare spots, streaks, or bubbles)
+          - Cap color verification (product-specific identification)
+          - Labeling correctness
+
+   6.3 Analytical Testing
+
+       6.3.1 Capture reagent Density (Critical Parameter)
+             Method: UV absorption at 280 nm after elution
+             Sample size: 5 cartridges per lot
+
+             ACCEPTANCE CRITERIA BY PRODUCT:
+             +------------------+-----------+-----------+-----------+
+             | Product          | Spec Min  | Target    | Spec Max  |
+             +------------------+-----------+-----------+-----------+
+             | NEXUS CK MB      | 2.0 mg/mL | 2.2 mg/mL | 2.5 mg/mL |
+             | NEXUS B2M        | 1.5 mg/mL | 1.8 mg/mL | 2.0 mg/mL |
+             | NEXUS Troponin   | 2.5 mg/mL | 2.8 mg/mL | 3.0 mg/mL |
+             +------------------+-----------+-----------+-----------+
+
+             NOTE: Results at extreme ends of the specification range
+             (within 10% of spec limits) should be flagged for review by
+             QC Supervisor. While technically passing, extreme values may
+             impact downstream calibration performance.
+
+       6.3.2 Binding Capacity
+             Method: Functional binding assay with reference target analyte
+             Sample size: 3 cartridges per lot
+             Acceptance: >= 95% binding capacity relative to reference
+
+       6.3.3 Sterility
+             Method: Per pharmacopeial method (USP <71>)
+             Acceptance: No growth after 14 days
+
+       6.3.4 Endotoxin
+             Method: LAL kinetic turbidimetric (USP <85>)
+             Acceptance: < 0.5 EU/mL
+
+   6.4 Disposition
+       a) ACCEPT: All criteria met - release to production warehouse
+       b) REJECT: Any critical parameter fails - quarantine and initiate NCR
+       c) CONDITIONAL: Non-critical parameter borderline - QC Supervisor
+          review required
+
+7. RECORDS
+   - Incoming Inspection Report (form QC-INR-001)
+   - COA archival (electronic and paper)
+   - Retention samples (minimum 50 cartridges per lot, stored at 2-8 deg C)
+
+8. REVISION HISTORY
+   Rev 1 (2019-03-01): Initial release
+   Rev 2 (2020-06-15): Added endotoxin testing requirement
+   Rev 3 (2021-11-01): Updated sampling plan to AQL 0.65
+   Rev 4 (2022-09-01): Added cap color verification step, updated
+                        capture reagent density specifications

@@ -1,0 +1,8 @@
+parameter,value,unit,spec_min,spec_max,status
+Capture reagent Density,2.4,mg/mL,2.0,2.5,PASS
+Binding Capacity,98.5,%,95.0,,PASS
+Sterility,Pass,,,,PASS
+Endotoxin,0.3,EU/mL,,0.5,PASS
+Visual Inspection,Conform,,,,PASS
+Cartridge Dimensions,12.05,mm,11.9,12.1,PASS
+pH of Coating Buffer,7.42,,7.2,7.6,PASS

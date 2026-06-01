@@ -1,0 +1,28 @@
+[project]
+name = "agent-rca-smartmanufacturing"
+version = "0.1.0"
+description = "Manufacturing RCA Agent - workspace root"
+requires-python = ">=3.12"
+license = { text = "MIT-0" }
+
+dependencies = [
+    "boto3>=1.42,<2.0",
+]
+
+[project.scripts]
+deploy = "cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120

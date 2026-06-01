@@ -1,0 +1,16 @@
+date,equipment_id,equipment_name,product,lot_number,operator,start_time,end_time,status,notes
+2023-05-03,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900935,John Carter,09:39,11:35,completed,
+2023-05-07,NEXUS-002,NEXUS Analyzer 2,NEXUS CK MB,1009900936,Mary Hayes,09:05,11:16,completed,
+2023-05-11,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900937,John Carter,07:31,09:59,completed,
+2023-05-15,NEXUS-002,NEXUS Analyzer 2,NEXUS CK MB,1009900938,Peter Martin,09:43,12:00,completed,
+2023-05-19,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900939,Peter Martin,07:50,09:47,completed,
+2023-05-23,NEXUS-002,NEXUS Analyzer 2,NEXUS CK MB,1009900940,Peter Martin,08:10,10:35,completed,First batch with new CART lot
+2023-05-27,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900941,Sophie Barnett,08:24,10:43,completed,Retest requested after Primary OOS
+2023-05-31,NEXUS-002,NEXUS Analyzer 2,NEXUS CK MB,1009900942,Peter Martin,08:27,10:10,completed,
+2023-06-04,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900943,John Carter,08:53,10:26,completed,
+2023-06-08,NEXUS-002,NEXUS Analyzer 2,NEXUS CK MB,1009900944,Sophie Barnett,09:16,11:23,completed,
+2023-06-12,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900945,John Carter,09:42,11:33,completed,
+2023-06-16,NEXUS-002,NEXUS Analyzer 2,NEXUS CK MB,1009900946,John Carter,09:26,11:49,completed,
+2023-06-20,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900947,Peter Martin,09:45,11:26,completed,
+2023-06-24,NEXUS-002,NEXUS Analyzer 2,NEXUS CK MB,1009900948,Mary Hayes,08:29,10:01,completed,
+2023-06-28,NEXUS-001,NEXUS Analyzer 1,NEXUS CK MB,1009900949,Peter Martin,07:44,09:54,completed,

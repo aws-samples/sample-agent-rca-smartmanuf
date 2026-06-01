@@ -1,0 +1,13 @@
+test_id,lot_number,test_name,test_date,parameter,value,unit,spec_min,spec_max,status,error_code,instrument_id,analyst,notes
+QC-2025-2001,1011174635,Calibration Primary,2025-05-04,primary_signal,189.6,SIU,150.0,250.0,PASS,,NEXUS-003,A. Reed,
+QC-2025-2002,1011174636,Calibration Primary,2025-05-09,primary_signal,207.5,SIU,150.0,250.0,PASS,,NEXUS-004,C. Mitchell,
+QC-2025-2003,1011174637,Calibration Primary,2025-05-14,primary_signal,180.5,SIU,150.0,250.0,PASS,,NEXUS-003,A. Reed,
+QC-2025-2004,1011174638,Calibration Primary,2025-05-19,primary_signal,187.0,SIU,150.0,250.0,PASS,,NEXUS-004,C. Mitchell,
+QC-2025-2005,1011174639,Calibration Primary,2025-05-24,primary_signal,196.8,SIU,150.0,250.0,PASS,,NEXUS-003,C. Mitchell,
+QC-2025-2006,1011174640,Calibration Primary,2025-05-29,primary_signal,419.6,SIU,150.0,250.0,FAIL,B18,NEXUS-004,C. Mitchell,Unexpected high signal - wrong cartridge type suspected
+QC-2025-2007,1011174641,Calibration Primary,2025-06-03,primary_signal,208.8,SIU,150.0,250.0,PASS,,NEXUS-003,C. Mitchell,
+QC-2025-2008,1011174642,Calibration Primary,2025-06-08,primary_signal,207.8,SIU,150.0,250.0,PASS,,NEXUS-004,B. Bennett,
+QC-2025-2009,1011174643,Calibration Primary,2025-06-13,primary_signal,211.3,SIU,150.0,250.0,PASS,,NEXUS-003,C. Mitchell,
+QC-2025-2010,1011174644,Calibration Primary,2025-06-18,primary_signal,204.7,SIU,150.0,250.0,PASS,,NEXUS-004,B. Bennett,
+QC-2025-2011,1011174645,Calibration Primary,2025-06-23,primary_signal,203.7,SIU,150.0,250.0,PASS,,NEXUS-003,B. Bennett,
+QC-2025-2012,1011174646,Calibration Primary,2025-06-28,primary_signal,190.4,SIU,150.0,250.0,PASS,,NEXUS-004,A. Reed,

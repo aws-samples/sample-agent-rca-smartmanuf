@@ -1,0 +1,145 @@
+DOCUMENT TITLE: MOM-SUP-2023-009
+================================================================================
+
+MEETING MINUTES: Supplier Audit - Surface Coating Solutions
+DOCUMENT ID: MOM-SUP-2023-009
+DATE: 2023-09-15
+LOCATION: Surface Coating Solutions, Riverside
+TYPE: Routine Supplier Quality Audit
+
+ATTENDEES:
+  MedTech Diagnostics:
+    J. Martin (Quality Manager) - Audit Lead
+    A. Lawson (QC Supervisor)
+    N. Carter (Supplier Quality Engineer)
+
+  Surface Coating Solutions:
+    Dr. E. Fowler (Technical Director)
+    C. Blake (Quality Manager)
+    H. Morris (Production Manager)
+
+================================================================================
+1. AUDIT SCOPE
+================================================================================
+
+Annual supplier quality audit of Surface Coating Solutions, qualified supplier of
+CART (Sensor Cartridge) cartridges for NEXUS immunoassay products. Audit
+covers manufacturing process, quality management system, and specific review
+of lot CART-2023-06-002 linked to NEXUS CK MB calibration issue.
+
+================================================================================
+2. AGENDA AND DISCUSSION
+================================================================================
+
+2.1 Quality Management System Review
+    - ISO 13485:2016 certification current (expires 2025-03)
+    - No major findings from last external audit (June 2023)
+    - Minor finding: Document control - some work instructions outdated
+    - STATUS: Satisfactory
+
+2.2 Manufacturing Process Review
+    - Coating process parameters reviewed
+    - Capture reagent immobilization protocol unchanged since qualification
+    - Process capability study: Cpk = 1.2 for capture reagent density (acceptable
+      but not robust)
+    - Coating uniformity: CV = 5.8% (spec: < 8%)
+    - STATUS: Acceptable with observations
+
+2.3 Lot CART-2023-06-002 Review (Specific Focus)
+    J. Martin presented the NEXUS CK MB calibration issue:
+    - Batches 1009900940 onward showed elevated primary signal (>550 SIU)
+    - Root cause traced to CART lot CART-2023-06-002
+    - Capture reagent density at 2.4 mg/mL (within spec 2.0-2.5 but high)
+
+    Surface Coating Solutions response (Dr. E. Fowler):
+    - Acknowledged lot CART-2023-06-002 was at upper end of specification
+    - Explained variation due to new capture reagent source material batch
+    - Capture reagent raw material lot (AB-2023-04) had higher specific activity
+      than previous lot (AB-2023-01)
+    - Internal specification for capture reagent density: 1.8-2.6 mg/mL
+      (wider than MedTech Diagnostics incoming spec of 2.0-2.5 mg/mL)
+
+    DISCUSSION:
+    J. Martin requested Surface Coating Solutions tighten internal specification
+    to align with MedTech Diagnostics downstream process sensitivity. Proposed internal
+    target of 2.0-2.3 mg/mL with alert at 2.3 mg/mL.
+
+    Dr. Fowler agreed to evaluate feasibility and provide response by
+    2023-10-15.
+
+    ACTION ITEM: Surface Coating Solutions to evaluate tighter internal
+    specification for NEXUS CK MB sensor cartridges (Target: 2.0-2.3 mg/mL)
+    Owner: Dr. E. Fowler | Due: 2023-10-15
+
+2.4 Process Controls and Monitoring
+    - Statistical process control charts reviewed
+    - Moving range chart shows lot-to-lot variation in capture reagent density
+    - No trend or special cause detected in process
+    - Variation attributed to capture reagent raw material variability
+    - STATUS: Acceptable
+
+2.5 Corrective Actions from Previous Audit (2022)
+    - SCAR-2022-015 (Endotoxin testing frequency): Closed, verified effective
+    - SCAR-2022-016 (COA delivery timeliness): Closed, improved from 5 days
+      to 2 days average delivery
+    - STATUS: All closed
+
+================================================================================
+3. AUDIT FINDINGS
+================================================================================
+
+MAJOR FINDINGS: None
+
+MINOR FINDINGS:
+  F-2023-001: Internal capture reagent density specification (1.8-2.6 mg/mL) is
+  wider than customer specification (2.0-2.5 mg/mL). This allows production
+  of lots that technically pass internal QC but may cause downstream
+  performance issues at customer.
+  Classification: Minor Non-Conformity
+  Required Action: Align internal specification with customer requirements
+
+OBSERVATIONS:
+  O-2023-001: Process capability (Cpk = 1.2) for capture reagent density is
+  adequate but not robust. Recommend process improvement to achieve Cpk > 1.5.
+
+  O-2023-002: Raw material (capture reagent) lot-to-lot variability is the primary
+  driver of finished product (sensor cartridge) variability. Consider enhanced
+  incoming inspection of capture reagent raw material or qualification of second
+  source.
+
+================================================================================
+4. ACTION ITEMS
+================================================================================
+
+  # | Action                                          | Owner        | Due
+  --+-------------------------------------------------+--------------+----------
+  1 | Evaluate tighter capture reagent density spec           | Dr. E. Fowler | 2023-10-15
+  2 | Respond to finding F-2023-001 with SCAR          | C. Blake     | 2023-10-01
+  3 | Provide process improvement plan for Cpk > 1.5   | H. Morris     | 2023-12-01
+  4 | Share capture reagent raw material qualification data    | Dr. E. Fowler | 2023-10-15
+  5 | Schedule follow-up review meeting                 | N. Carter    | 2023-11-15
+
+================================================================================
+5. SUPPLIER RATING
+================================================================================
+
+Overall audit score: 82/100 (Previous: 90/100)
+Rating: QUALIFIED (conditional on closure of F-2023-001)
+
+Scoring breakdown:
+  Quality System: 18/20
+  Manufacturing: 16/20
+  Process Controls: 15/20 (deduction for Cpk and specification gap)
+  Corrective Actions: 18/20
+  Documentation: 15/20
+
+================================================================================
+6. NEXT AUDIT
+================================================================================
+
+Next scheduled audit: September 2024
+Type: Annual routine + follow-up on F-2023-001 closure
+
+MINUTES PREPARED BY: N. Carter (Supplier Quality Engineer)
+APPROVED BY: J. Martin (Quality Manager)
+DATE: 2023-09-20

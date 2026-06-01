@@ -1,0 +1,147 @@
+DOCUMENT TITLE: CAPA-2023-0058
+================================================================================
+
+CORRECTIVE AND PREVENTIVE ACTION REPORT
+CAPA ID: CAPA-2023-0058
+DATE OPENED: 2023-07-25
+TARGET CLOSURE DATE: 2023-12-31
+STATUS: In Progress - Corrective Actions Implemented
+
+RELATED DOCUMENTS:
+  NCR: NCR-2023-0100, NCR-2023-0101
+  Change Request: CR-2023-0087
+  Investigation: INV-2023-0055 (NEXUS CK MB Primary OOS Investigation)
+  Supplier Audit: MOM-SUP-2023-009
+
+================================================================================
+1. PROBLEM DESCRIPTION
+================================================================================
+
+Multiple consecutive NEXUS CK MB production lots (starting with 1009900940)
+exhibited primary calibration signal exceeding upper specification limit of 550 SIU,
+resulting in calibration failure (error code B18). Investigation identified
+root cause as elevated capture reagent density in CART coating lot CART-2023-06-002
+(2.4 mg/mL, at upper end of 2.0-2.5 specification range) from supplier
+Surface Coating Solutions.
+
+IMPACT:
+  - 5 lots quarantined (1009900940 through 1009900944)
+  - Production hold for NEXUS CK MB: 3 weeks
+  - Estimated financial impact: EUR 225,000
+  - No customer-reaching product (all lots caught during QC)
+
+ROOT CAUSE:
+CART coating batch CART-2023-06-002 has elevated reactive surface capacity due
+to higher capture reagent density (2.4 mg/mL vs typical 2.1-2.2 mg/mL). The higher
+density results in increased target analyte capture on sensor cartridges, producing elevated
+primary optical signal that exceeds the 550 SIU upper specification limit.
+
+ROOT CAUSE CATEGORY: Matieres (Materials) - Supplier lot variation
+
+================================================================================
+2. CORRECTIVE ACTIONS
+================================================================================
+
+CA-1: Immediate Containment
+  Action: Quarantine all remaining CART lot CART-2023-06-002 inventory
+  Owner: P. Dawson (Production Manager)
+  Due Date: 2023-07-12
+  STATUS: COMPLETED (2023-07-12)
+
+CA-2: Lot Disposition
+  Action: Reject CART lot CART-2023-06-002 for NEXUS CK MB use; evaluate
+  potential reuse for products with wider primary signal specification tolerance
+  Owner: A. Lawson (QC Supervisor)
+  Due Date: 2023-07-20
+  STATUS: COMPLETED (2023-07-18)
+  Note: Lot rejected for all NEXUS products to avoid risk
+
+CA-3: Supplier Notification
+  Action: Issue Supplier Corrective Action Request (SCAR) to Surface Coating
+  Solutions regarding lot CART-2023-06-002 and specification alignment
+  Owner: N. Carter (Supplier Quality Engineer)
+  Due Date: 2023-07-30
+  STATUS: COMPLETED (2023-07-28)
+
+CA-4: Resume Production
+  Action: Resume NEXUS CK MB production using replacement CART lot
+  CART-2023-07-001 (capture reagent density 2.1 mg/mL, confirmed within tighter
+  target range)
+  Owner: P. Dawson (Production Manager)
+  Due Date: 2023-08-05
+  STATUS: COMPLETED (2023-08-01)
+
+================================================================================
+3. PREVENTIVE ACTIONS
+================================================================================
+
+PA-1: Tighten Incoming Inspection Criteria
+  Action: Revise incoming inspection specification for NEXUS CK MB sensor cartridges.
+  Reduce capture reagent density acceptance range from 2.0-2.5 mg/mL to 2.0-2.3
+  mg/mL. Values between 2.3-2.5 mg/mL require QC Supervisor approval and
+  enhanced initial batch monitoring.
+  Owner: A. Lawson (QC Supervisor)
+  Due Date: 2023-09-30
+  STATUS: COMPLETED (2023-09-15)
+  Evidence: Updated SPEC-CART-CKMB Rev 5
+
+PA-2: Enhanced First-Batch Monitoring
+  Action: Implement mandatory enhanced monitoring protocol for first 3 batches
+  after any CART lot change. Enhanced monitoring includes: duplicate calibration
+  testing, comparison to previous lot Primary signal values, and QC Supervisor review
+  before batch release.
+  Owner: M. Payne (QC Analyst)
+  Due Date: 2023-09-30
+  STATUS: COMPLETED (2023-09-20)
+  Evidence: Updated SOP-CAL-001 Rev 4 (new Section 8.5)
+
+PA-3: Supplier Specification Alignment
+  Action: Require Surface Coating Solutions to tighten internal capture reagent density
+  specification to 2.0-2.3 mg/mL (aligned with updated MedTech Diagnostics spec).
+  Include as condition for continued supplier qualification.
+  Owner: N. Carter (Supplier Quality Engineer)
+  Due Date: 2023-12-31
+  STATUS: IN PROGRESS
+  Update: Surface Coating Solutions agreed in principle during September 2023 audit.
+  Formal specification change expected by November 2023.
+
+PA-4: QC Trend Analysis Enhancement
+  Action: Add correlation analysis between CART lot identifier and primary signal
+  values in QC trend analysis system. Automated alert if Primary signal values for a new
+  CART lot deviate by more than 2 sigma from historical mean.
+  Owner: M. Payne (QC Analyst)
+  Due Date: 2023-10-31
+  STATUS: COMPLETED (2023-10-25)
+  Evidence: Trend analysis system updated, validation report QC-VAL-2023-015
+
+================================================================================
+4. EFFECTIVENESS VERIFICATION
+================================================================================
+
+VERIFICATION PLAN:
+Monitor NEXUS CK MB primary calibration results for 6 months after all corrective
+and preventive actions are implemented. Verify:
+  a) No Primary OOS events with new CART lots received under tighter specification
+  b) Enhanced monitoring protocol successfully applied at each CART lot change
+  c) Surface Coating Solutions internal specification aligned
+
+VERIFICATION PERIOD: October 2023 - March 2024
+VERIFICATION OWNER: J. Martin (Quality Manager)
+STATUS: In progress
+
+INTERIM RESULTS (as of December 2023):
+  - 5 batches produced with replacement CART lot CART-2023-07-001
+  - All Primary signal values within specification (range: 492-518 SIU)
+  - No Primary OOS events since corrective actions implemented
+  - Surface Coating Solutions specification alignment pending final confirmation
+
+================================================================================
+5. APPROVAL
+================================================================================
+
+OPENED BY: J. Martin (Quality Manager) - 2023-07-25
+REVIEWED BY: V. Ross (Quality Director) - 2023-07-26
+APPROVED BY: V. Ross (Quality Director) - 2023-07-26
+
+CAPA CLASSIFICATION: Significant (Material-related quality impact)
+REGULATORY REPORTING: Not required (no customer-reaching product)

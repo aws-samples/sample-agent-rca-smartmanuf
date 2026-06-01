@@ -1,0 +1,159 @@
+INVESTIGATION REPORT: INV-2022-0045
+================================================================================
+
+TITLE: NEXUS CK MB Calibration Drift Investigation
+PRODUCT: NEXUS CK MB (Reference 30421)
+DATE OPENED: 2022-03-15
+DATE CLOSED: 2022-05-20
+STATUS: Closed - CAPA Verified Effective
+
+CLASSIFICATION: Product Quality Investigation
+PRIORITY: High
+INVESTIGATION LEAD: A. Lawson (QC Supervisor)
+APPROVED BY: J. Martin (Quality Manager)
+
+================================================================================
+SECTION 1: PROBLEM STATEMENT
+================================================================================
+
+During routine QC trend analysis, a gradual downward drift in primary calibration
+signal was observed for NEXUS CK MB across multiple consecutive lots
+manufactured between January and March 2022. Primary signal values decreased from a
+nominal 500 SIU to approximately 460 SIU, approaching the lower specification
+limit of 450 SIU. No lots failed specification but the trend was statistically
+significant (p < 0.01).
+
+Affected lots: 1009900820 through 1009900828 (9 lots)
+Signal trend: primary signal decreasing from ~500 SIU to ~460 SIU over 9 lots
+
+================================================================================
+SECTION 2: INVESTIGATION METHODOLOGY - QQOCQPC
+================================================================================
+
+QUI (Who):
+  - Who detected the problem? QC trend analysis (automated alert)
+  - Who is affected? Potentially all customers using affected lots
+  - Who was involved in production? Standard production team, no personnel
+    changes during the affected period
+
+QUOI (What):
+  - What is the problem? Gradual downward drift in primary calibration signal
+  - What product is affected? NEXUS CK MB (Reference 30421)
+  - What parameter is out of trend? primary signal (SIU) - downward drift
+  - What is NOT affected? secondary signal remains stable and within specification
+
+OU (Where):
+  - Where was the problem detected? QC laboratory during calibration
+    verification
+  - Where does the product fail? primary signal measurement step
+  - Where was the product manufactured? Standard production facility,
+    Calibration Station 1 (EQ-CAL-001)
+
+COMMENT (How):
+  - How was the problem detected? QC trend analysis system flagged
+    statistically significant downward trend
+  - How does the failure manifest? primary signal gradually decreasing,
+    approaching lower specification limit
+  - How many lots are affected? 9 consecutive lots
+
+QUAND (When):
+  - When did the problem start? January 2022 (lot 1009900820)
+  - When was it detected? March 2022 (QC trend alert)
+  - When was the last good lot? December 2021 (lot 1009900819, primary signal = 498 SIU)
+
+POURQUOI (Why):
+  - Why is this a problem? Continued drift could result in OOS lots and
+    potential calibration failures at customer sites
+  - Why is it important? Patient diagnostic accuracy depends on valid
+    calibration
+
+COMBIEN (How much):
+  - How many lots affected? 9 lots
+  - How much drift? Approximately 40 SIU decrease (500 to 460 SIU)
+  - Financial exposure: 9 lots x ~2,500 kits = ~22,500 kits at risk
+
+================================================================================
+SECTION 3: ROOT CAUSE ANALYSIS (5M / Ishikawa)
+================================================================================
+
+MATIERE (Materials):
+  - CART coating lots: No change during affected period (same lot CART-2021-11-003)
+  - Calibrator lots: No change
+  - Reagent cards: No change
+  CONCLUSION: Materials ELIMINATED as root cause
+
+METHODE (Method):
+  - Production procedures: No SOP changes during affected period
+  - Testing procedures: No changes
+  CONCLUSION: Method ELIMINATED as root cause
+
+MILIEU (Environment):
+  - Production environment: Temperature and humidity logs reviewed - within spec
+  - Storage conditions: No anomalies
+  CONCLUSION: Environment ELIMINATED as root cause
+
+MAIN D'OEUVRE (Personnel):
+  - Operator roster: No personnel changes
+  - Training records: All operators current on training
+  CONCLUSION: Personnel ELIMINATED as root cause
+
+MACHINE (Equipment):
+  - NEXUS Calibration Station 1 (EQ-CAL-001)
+  - Last PM: September 2021 (WO-2021-0290) - 6 months prior
+  - Investigation found: Optical sensor showing gradual degradation
+  - Optical detector sensitivity decreased from 98% to 91% over 6 months
+  - Degradation consistent with normal aging of xenon lamp (rated life:
+    2000 hours, current usage: 1850 hours)
+  CONCLUSION: Equipment CONFIRMED as root cause
+
+================================================================================
+SECTION 4: ROOT CAUSE DETERMINATION
+================================================================================
+
+ROOT CAUSE: Equipment aging - Xenon lamp in NEXUS Calibration Station 1
+(EQ-CAL-001) approaching end of rated life, causing gradual decrease in
+optical detection sensitivity. This resulted in proportionally lower
+primary signal readings across consecutive lots.
+
+CATEGORY: Machine (Equipment)
+
+CONTRIBUTING FACTORS:
+- PM interval (quarterly) did not include lamp life monitoring
+- No predictive maintenance trigger for lamp replacement
+- Gradual drift not immediately apparent in individual lot results
+
+================================================================================
+SECTION 5: CORRECTIVE ACTIONS
+================================================================================
+
+IMMEDIATE:
+1. Replaced xenon lamp in EQ-CAL-001 (WO-2022-0095, 2022-03-20)
+2. Retested affected lots on refurbished instrument
+3. All 9 lots retested within specification - released for distribution
+
+PREVENTIVE (CAPA-2022-0032):
+1. Added lamp usage hours to PM checklist (trigger replacement at 1500 hours)
+2. Implemented quarterly optical sensor performance trending
+3. Added automated alert for primary signal drift > 2 sigma from historical mean
+4. Updated PM schedule to include lamp life monitoring
+
+EFFECTIVENESS VERIFICATION:
+Monitoring period: May 2022 - November 2022 (6 months)
+Result: No recurrence of primary signal drift. Lamp replaced proactively at 1500 hours
+in August 2022. All lots within nominal primary signal range (490-510 SIU).
+CAPA verified effective and closed.
+
+================================================================================
+SECTION 6: CONCLUSION
+================================================================================
+
+The calibration drift was caused by equipment aging (xenon lamp degradation)
+and not by material or process changes. This investigation established the
+importance of predictive maintenance for optical components in NEXUS
+calibration stations. The corrective actions implemented (lamp life monitoring
+and proactive replacement) have been verified effective.
+
+NOTE: This investigation is relevant as historical context for any future
+calibration-related investigations on NEXUS CK MB. However, each new
+investigation should independently evaluate all 5M categories, as the root
+cause may differ.

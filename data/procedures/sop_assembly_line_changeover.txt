@@ -1,0 +1,158 @@
+DOCUMENT TITLE: SOP-ASM-003
+================================================================================
+
+STANDARD OPERATING PROCEDURE
+TITLE: Assembly Line Product Changeover Procedure
+DOCUMENT ID: SOP-ASM-003
+REVISION: 2
+EFFECTIVE DATE: 2024-01-15
+REVIEW DATE: 2026-01-15
+
+DEPARTMENT: Production - Assembly
+AUTHOR: M. Gardner (Production Manager)
+APPROVED BY: L. Fields (Quality Manager)
+
+1. PURPOSE
+   This procedure defines the requirements for product changeover on shared
+   assembly lines used for NEXUS immunoassay kit production. The procedure
+   ensures complete removal of all components from the previous product
+   before starting production of the next product, preventing component
+   mix-up and cross-contamination.
+
+2. SCOPE
+   Applies to all product changeovers on assembly lines ASM-LINE-01 through
+   ASM-LINE-03 in Building B, Room 201. Covers changeover between any two
+   NEXUS products sharing assembly equipment.
+
+3. REFERENCES
+   - SOP-ASM-001: Assembly Line Operation
+   - SOP-ASM-002: Component Loading and Verification
+   - SOP-QC-040: In-Process Quality Checks
+   - ISO 13485:2016 Section 7.5.1 (Control of production)
+   - cGMP 21 CFR 820.70 (Production and process controls)
+
+4. DEFINITIONS
+   Line Clearance: Complete removal and verification of absence of all
+     components, materials, and labeling from the previous product run.
+   Changeover: The process of transitioning an assembly line from one
+     product to another.
+   First Article Inspection: Physical verification of the first assembled
+     unit after changeover to confirm correct components.
+
+5. CRITICAL REQUIREMENTS
+
+   5.1 MINIMUM CHANGEOVER TIME: 30 MINUTES
+       The changeover process requires a MINIMUM of 30 minutes to complete
+       all clearance and verification steps. This time includes:
+       - Physical clearance of line (10 min)
+       - Cleaning of contact surfaces (5 min)
+       - Loading of new components (5 min)
+       - Verification and documentation (10 min)
+
+       NOTE: Changeover time shall NOT be shortened for any reason including
+       production schedule pressure. Any deviation from minimum changeover
+       time must be documented as a non-conformity.
+
+   5.2 LINE CLEARANCE CHECKLIST
+       ALL 8 items must be verified and signed off before production restart.
+       The checklist (form PR-CLC-001) includes:
+
+       Item 1: Remove all previous product components from line
+               - Empty all hoppers, feeders, and staging areas
+               - Physically inspect all stations for residual components
+       Item 2: Verify hopper emptied of previous sensor cartridges
+               - sensor cartridge hopper must be completely empty
+               - Visual confirmation required (open hopper lid, inspect)
+               - Document number of residual cartridges removed (if any)
+       Item 3: Clean all contact surfaces
+               - Wipe down conveyor belts, guides, and fixtures
+               - Use approved cleaning agent (IPA 70%)
+       Item 4: Verify correct labeling materials loaded
+               - Confirm label roll matches next product reference
+               - Verify expiry date printing is correct
+       Item 5: Scan component barcodes for next product
+               - Scan each component type barcode against production order
+               - System must confirm product reference match
+               - CRITICAL: This step prevents wrong component loading
+       Item 6: Verify correct reagent cards loaded
+               - Confirm reagent card lot matches production order
+               - Visual check of card color coding
+       Item 7: First article inspection
+               - Assemble and inspect first unit after changeover
+               - Verify all components are correct for the intended product
+               - Open kit and physically examine contents
+       Item 8: Supervisor sign-off
+               - Production supervisor must verify completed checklist
+               - Supervisor must be physically present at the line
+               - Supervisor signs and dates the clearance form
+
+   5.3 LINE CLEARANCE VERIFICATION
+       Before production of the next product can begin:
+       a) All 8 checklist items must be completed and signed
+       b) Supervisor sign-off obtained (Item 8)
+       c) Clearance form filed in batch record
+       d) Assembly line system unlocked by supervisor authorization
+
+6. PROCEDURE
+
+   6.1 Production Stop
+       a) Complete current production run
+       b) Record final unit count and lot number in batch record
+       c) Stop assembly line and engage safety lockout
+
+   6.2 Line Clearance (Minimum 15 minutes)
+       a) Remove all components from hoppers, feeders, and stations
+       b) Pay particular attention to sensor cartridge hoppers:
+          - sensor cartridges for different products may be physically similar
+          - Different products use different capture reagent coatings
+          - Visual differentiation may be difficult without cap color check
+       c) Collect and count all removed components
+       d) Return unused components to warehouse with documentation
+       e) Clean all contact surfaces per cleaning procedure
+
+   6.3 Component Loading (Minimum 5 minutes)
+       a) Retrieve components for next product from warehouse
+       b) Verify component lot numbers against production order
+       c) Load components into designated hoppers and feeders
+       d) Scan component barcodes to verify correct product match
+
+   6.4 Verification (Minimum 10 minutes)
+       a) Complete all 8 items on Line Clearance Checklist
+       b) Perform first article inspection
+       c) Obtain supervisor sign-off
+       d) File completed checklist in batch record
+
+7. PRODUCT-SPECIFIC NOTES
+
+   7.1 NEXUS CK MB (Reference 30421) to NEXUS B2M (Reference 30420)
+       CAUTION: sensor cartridges for CK MB and B2M are physically similar in shape
+       and size. Differentiation relies on:
+       - Cap color: CK MB = no color; B2M = blue cap
+       - Barcode: Different product reference encoded
+       - Labeling: Product name printed on sachet
+       Extra vigilance required during hopper clearance for this changeover
+       combination.
+
+   7.2 NEXUS Troponin (Reference 30422) to any product
+       Troponin sensor cartridges have distinct red cap and larger diameter - lower
+       mix-up risk.
+
+8. NON-COMPLIANCE
+   Any deviation from this procedure, including but not limited to:
+   - Changeover time less than 30 minutes
+   - Incomplete line clearance checklist
+   - Missing supervisor sign-off
+   - Skipped first article inspection
+   shall be immediately documented as a non-conformity and reported to
+   Quality Assurance.
+
+9. RECORDS
+   - Line Clearance Checklist (form PR-CLC-001)
+   - Component Return Form (form PR-CRF-001)
+   - First Article Inspection Report (form PR-FAI-001)
+
+10. REVISION HISTORY
+    Rev 1 (2022-03-01): Initial release
+    Rev 2 (2024-01-15): Added barcode scanning requirement (Item 5),
+                         increased minimum changeover time from 20 to 30 min,
+                         added product-specific caution notes for CK MB / B2M

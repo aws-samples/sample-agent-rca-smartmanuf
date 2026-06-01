@@ -1,0 +1,194 @@
+DOCUMENT TITLE: PRA-ASM-001
+================================================================================
+
+PROCESS RISK ASSESSMENT: Assembly Line Changeover
+DOCUMENT ID: PRA-ASM-001
+REVISION: 2
+EFFECTIVE DATE: 2025-01-15
+PROCESS: NEXUS Kit Assembly - Product Changeover (ASM-LINE-01 to ASM-LINE-03)
+
+ASSESSOR: M. Gardner (Production Manager)
+REVIEWED BY: L. Fields (Quality Manager)
+
+SCOPE:
+This process risk assessment covers potential risks associated with product
+changeover on shared NEXUS kit assembly lines. The assessment focuses on
+component mix-up risks, cross-contamination, and procedural compliance
+during line clearance.
+
+REFERENCE PROCEDURES:
+  - SOP-ASM-003 Rev 2: Assembly Line Product Changeover Procedure
+  - SOP-ASM-001: Assembly Line Operation
+  - SOP-QC-040: In-Process Quality Checks
+
+================================================================================
+RISK REGISTER
+================================================================================
+
+RISK: PR-001
+TITLE: Incomplete line clearance leading to wrong component in kit
+DESCRIPTION:
+  During product changeover, components from the previous product are not
+  completely removed from the assembly line. Residual components (sensor cartridges,
+  reagent cards, or other kit components) from the previous product are
+  inadvertently included in kits for the next product. This results in
+  kits containing components coated with incorrect capture reagents, leading to
+  completely invalid test results for the end user.
+
+POTENTIAL CAUSES:
+  1. Operator fails to fully empty component hoppers during changeover
+  2. Components lodged in hard-to-reach areas of feed mechanism
+  3. Changeover performed too quickly (below minimum time requirement)
+  4. Operator distraction or multitasking during clearance
+  5. Supervisor sign-off without independent physical verification
+
+AFFECTED PRODUCT COMBINATIONS (highest risk):
+  - NEXUS CK MB (30421) <-> NEXUS B2M (30420): sensor cartridges physically similar,
+    differentiation relies on cap color (CK MB: no color; B2M: blue cap)
+  - NEXUS D-Dimer (30425) <-> NEXUS Troponin (30422): Reagent cards similar
+    in size, differentiation by color coding
+
+SEVERITY (S): 9
+  Justification: Patient receives completely wrong test result; potential for
+  misdiagnosis and inappropriate treatment. Class I recall may be required.
+OCCURRENCE (O): 2
+  Justification: Changeover procedures and multiple controls in place;
+  one historical near-miss (INV-2024-0067, NEXUS Troponin) caught during
+  in-process check; no customer-reaching events in past 5 years.
+DETECTION (D): 3
+  Justification: Multiple detection layers - barcode scanning (automated),
+  in-process QC inspection (manual), first article inspection (manual).
+  However, detection depends on all controls functioning and being executed.
+RPN: 54
+
+RISK LEVEL: MEDIUM (RPN 50-100)
+
+EXISTING CONTROLS:
+  1. SOP-ASM-003 Rev 2: 30-minute minimum changeover time
+  2. 8-item line clearance checklist with supervisor sign-off
+  3. Barcode scanning at component loading (automated detection)
+  4. In-process QC inspection at Station 4
+  5. First article inspection after changeover
+
+CONTROL EFFECTIVENESS:
+  Controls are effective WHEN FOLLOWED. Risk increases significantly if:
+  - Changeover time is shortened (less time for thorough clearance)
+  - Checklist items are marked without actual verification
+  - Barcode scanner is bypassed or malfunctioning
+  - Supervisor sign-off is performed remotely or without physical presence
+
+ACTION RECOMMENDED: Reinforce procedural compliance through regular
+  observation audits; consider automated line lockout if changeover time
+  is below minimum
+ACTION OWNER: M. Gardner (Production Manager)
+TARGET DATE: 2025-06-30
+
+--------------------------------------------------------------------------------
+
+RISK: PR-002
+TITLE: Short changeover time leading to verification steps being skipped
+DESCRIPTION:
+  Production schedule pressure or other operational factors lead to
+  changeover being performed in less than the SOP-required minimum of
+  30 minutes. Shortened changeover time results in verification steps
+  being rushed, abbreviated, or skipped entirely. This directly increases
+  the probability of PR-001 (wrong component in kit) occurring.
+
+POTENTIAL CAUSES:
+  1. Production schedule pressure (rush orders, delivery deadlines)
+  2. Understaffing on assembly line (fewer operators for changeover)
+  3. Verbal authorization to shorten changeover by supervisor/management
+  4. Lack of automated enforcement of minimum changeover time
+  5. Cultural acceptance of procedural shortcuts under pressure
+
+SEVERITY (S): 8
+  Justification: Short changeover does not directly harm patients but
+  significantly increases probability of component mix-up (PR-001);
+  severity reflects the enabling effect on the higher-severity risk.
+OCCURRENCE (O): 3
+  Justification: Production schedule pressure is a recurring operational
+  reality; while procedures prohibit shortening changeover, enforcement
+  depends on human compliance; periodic audit findings suggest occasional
+  marginal compliance with changeover timing.
+DETECTION (D): 4
+  Justification: Changeover time is recorded in machine stop logs but
+  reviewed retrospectively (not real-time enforcement). Short changeovers
+  may not be detected until post-production review or investigation.
+RPN: 96
+
+RISK LEVEL: MEDIUM (RPN 50-100)
+
+EXISTING CONTROLS:
+  1. SOP-ASM-003 specifies 30-minute minimum changeover time
+  2. Machine stop logs record changeover duration
+  3. Supervisor must authorize production restart
+  4. Periodic process audits review changeover compliance
+
+CONTROL GAP:
+  No automated enforcement mechanism exists to prevent production restart
+  if changeover time is below minimum. Current controls rely entirely on
+  human compliance and retrospective review.
+
+ACTION RECOMMENDED:
+  1. Implement automated line lockout that prevents restart until minimum
+     changeover time has elapsed
+  2. Add real-time alert to production supervisor if changeover time
+     approaches minimum
+  3. Include changeover time compliance in operator performance metrics
+ACTION OWNER: M. Gardner (Production Manager)
+TARGET DATE: 2025-06-30
+
+--------------------------------------------------------------------------------
+
+RISK: PR-003
+TITLE: Barcode scanner failure during component loading verification
+DESCRIPTION:
+  Barcode scanner at component loading station fails or produces read errors,
+  causing operators to bypass the automated component verification step. This
+  removes a key automated detection control for wrong components.
+
+POTENTIAL CAUSES:
+  1. Scanner lens contamination (dust, residue)
+  2. Scanner hardware failure
+  3. Barcode label damage or poor print quality
+  4. Scanner calibration drift
+
+SEVERITY (S): 7
+  Justification: Loss of one detection layer; other controls (visual
+  inspection, QC check) remain active
+OCCURRENCE (O): 2
+  Justification: Scanner maintained monthly; historical failure rate low
+DETECTION (D): 3
+  Justification: Scanner errors are logged; operator override is recorded
+  and flagged for review
+RPN: 42
+
+RISK LEVEL: LOW (RPN < 50)
+
+EXISTING CONTROLS:
+  - Monthly scanner calibration and cleaning (PM schedule)
+  - Scanner override requires supervisor authorization
+  - Override events logged and reviewed daily
+
+ACTION RECOMMENDED: None (acceptable risk level with current controls)
+
+================================================================================
+RISK SUMMARY
+================================================================================
+
+  Risk ID | Title                              | S  | O  | D  | RPN | Level
+  --------+------------------------------------+----+----+----+-----+-------
+  PR-001  | Incomplete clearance - wrong comp  |  9 |  2 |  3 |  54 | MEDIUM
+  PR-002  | Short changeover - steps skipped   |  8 |  3 |  4 |  96 | MEDIUM
+  PR-003  | Barcode scanner failure             |  7 |  2 |  3 |  42 | LOW
+
+HIGH RISK ITEMS (RPN > 100): None
+MEDIUM RISK ITEMS (RPN 50-100): 2 (PR-001, PR-002)
+LOW RISK ITEMS (RPN < 50): 1 (PR-003)
+
+KEY FINDING: The combination of PR-001 and PR-002 represents a significant
+compounding risk. If short changeover occurs (PR-002), the probability of
+incomplete clearance (PR-001) increases substantially. Current controls
+depend heavily on human compliance with no automated enforcement.
+
+NEXT REVIEW DATE: 2026-01-15

@@ -1,0 +1,62 @@
+CHANGE REQUEST: CR-2025-0045
+================================================================================
+
+TITLE: Update to assembly line changeover SOP (SOP-ASM-003)
+
+PRODUCT AFFECTED: All NEXUS products assembled on ASM-LINE-01
+
+CHANGE TYPE: Process
+CHANGE LEVEL: MINOR
+
+DATES:
+  Submission Date: 2025-08-01
+  Approval Date: 2025-08-10
+  Implementation Date: 2025-08-15
+  Effective For: All production runs after 2025-08-15
+
+DESCRIPTION:
+Update assembly line changeover procedure SOP-ASM-003 from Revision 2 to
+Revision 3 to incorporate additional safeguards against component mix-up
+during product changeover on shared assembly lines.
+
+JUSTIFICATION:
+Following investigation of NCR-2025-0050 (NEXUS CK MB cartridges found in NEXUS
+B2M kit, lot 1011174640), review of the changeover procedure identified
+opportunities to strengthen line clearance verification. The current procedure
+relies on operator self-verification; the updated procedure adds mandatory
+independent verification by a second operator and extends minimum changeover
+time.
+
+CHANGES MADE:
+1. Minimum changeover time increased from 30 minutes to 45 minutes
+2. Added mandatory independent verification (second operator sign-off)
+3. Added barcode scanning step for component verification at each station
+4. Enhanced clearance checklist from 8 to 12 items
+5. Added photographic evidence requirement for line clearance
+6. Mandatory supervisor sign-off before production restart
+
+RISK ANALYSIS:
+Current changeover procedure (Rev 2) allows single-operator line clearance
+verification. Investigation of NCR-2025-0050 showed that time pressure can
+lead to abbreviated changeover and incomplete clearance checks. Updated
+procedure mitigates this risk through dual verification and extended time.
+
+RELATED DOCUMENTS:
+  NCR Reference: NCR-2025-0050
+  Investigation Reference: INV-2025-0033
+  CAPA Reference: CAPA-2025-0018
+  Updated SOP: SOP-ASM-003 Rev 3
+
+TRAINING REQUIRED: Yes
+  Training Population: All assembly line operators and supervisors
+  Training Deadline: 2025-08-30
+  Training Method: Classroom + practical demonstration
+
+VALIDATION REQUIRED: No (procedural change, no equipment modification)
+
+APPROVAL:
+  Quality Manager: Approved - L. Fields (2025-08-10)
+  Production Manager: Approved - M. Gardner (2025-08-10)
+  EHS Manager: Approved - C. Lawrence (2025-08-10)
+
+STATUS: Approved and Implemented

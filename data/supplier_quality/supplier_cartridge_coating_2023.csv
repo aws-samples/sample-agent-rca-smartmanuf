@@ -1,0 +1,3 @@
+supplier_name,supplier_code,material,lot_number,mfg_date,expiry_date,capture reagent_density_mg_ml,binding_capacity_pct,sterility,endotoxin_eu_ml,status,notes
+Surface Coating Solutions,SUP-BCS-001,Sensor Cartridges NEXUS CK MB,CART-2023-05-001,2023-05-10,2024-05-10,2.1,96.2,Pass,0.2,Approved,Routine lot - within normal range
+Surface Coating Solutions,SUP-BCS-001,Sensor Cartridges NEXUS CK MB,CART-2023-06-002,2023-06-15,2024-06-15,2.4,98.5,Pass,0.3,Approved,Capture reagent density at upper end of specification (2.0-2.5 mg/mL)

@@ -1,0 +1,156 @@
+DOCUMENT TITLE: SOP-CAL-001
+================================================================================
+
+STANDARD OPERATING PROCEDURE
+TITLE: NEXUS Calibration Verification Procedure
+DOCUMENT ID: SOP-CAL-001
+REVISION: 3
+EFFECTIVE DATE: 2023-01-15
+REVIEW DATE: 2025-01-15
+
+DEPARTMENT: Quality Control - Final Release
+AUTHOR: M. Payne (QC Analyst)
+APPROVED BY: J. Martin (Quality Manager)
+
+1. PURPOSE
+   This procedure defines the calibration verification process for NEXUS
+   immunoassay kits prior to lot release. Calibration verification ensures
+   that each production lot produces valid calibration curves within
+   predefined acceptance criteria on NEXUS analyzers.
+
+2. SCOPE
+   Applies to all NEXUS immunoassay kits requiring calibration verification
+   as part of the final release testing protocol. Includes but is not limited
+   to NEXUS CK MB, NEXUS B2M, NEXUS Troponin, and NEXUS D-Dimer.
+
+3. REFERENCES
+   - SPEC-CAL-CKMB: Calibration Specifications for NEXUS CK MB
+   - SOP-QC-020: General QC Testing Procedure
+   - NEXUS Analyzer User Manual (Section 8: Calibration)
+   - ISO 17511:2020 (Metrological traceability)
+
+4. DEFINITIONS
+   S1: Calibrator Standard 1 (high concentration)
+   S2: Calibrator Standard 2 (low concentration / blank)
+   SIU: Signal Intensity Units
+   B18: Error code indicating invalid calibration (Primary out of range)
+   B19: Error code indicating invalid calibration (Secondary out of range)
+   B20: Error code indicating calibration curve non-linearity
+
+5. REQUIRED EQUIPMENT
+   - NEXUS Analyzer (qualified instruments: NEXUS-001 through NEXUS-005)
+   - Calibrator Standard High and S2 (from production lot under test)
+   - Reference calibrator set (QC reference materials, stored at 2-8 deg C)
+   - Environmental monitoring (temperature 20-25 deg C, humidity 30-70%)
+
+6. ACCEPTANCE CRITERIA
+
+   6.1 NEXUS CK MB (Reference 30421)
+       +------------+--------+-----------+-----------+
+       | Parameter  | Unit   | Spec Min  | Spec Max  |
+       +------------+--------+-----------+-----------+
+       | Primary Signal  | SIU    | 450       | 550       |
+       | Secondary Signal  | SIU    | 80        | 120       |
+       +------------+--------+-----------+-----------+
+
+       Primary Target: 500 SIU
+       Secondary Target: 100 SIU
+
+       NOTE: primary signal is directly correlated to reactive surface capacity
+       of the sensor cartridges. Higher capture reagent density on sensor cartridges will result
+       in proportionally higher primary signal values.
+
+   6.2 NEXUS B2M (Reference 30420)
+       +------------+--------+-----------+-----------+
+       | Parameter  | Unit   | Spec Min  | Spec Max  |
+       +------------+--------+-----------+-----------+
+       | Primary Signal  | SIU    | 150       | 250       |
+       | Secondary Signal  | SIU    | 40        | 80        |
+       +------------+--------+-----------+-----------+
+
+7. ERROR CODES
+
+   +------+--------------------------------------------------+
+   | Code | Description                                      |
+   +------+--------------------------------------------------+
+   | B18  | Invalid calibration - primary signal out of range      |
+   |      | (above upper limit or below lower limit)          |
+   +------+--------------------------------------------------+
+   | B19  | Invalid calibration - secondary signal out of range      |
+   +------+--------------------------------------------------+
+   | B20  | Calibration curve non-linearity detected          |
+   +------+--------------------------------------------------+
+   | B21  | Calibration expired (> 14 days since last cal)    |
+   +------+--------------------------------------------------+
+
+   When error B18 occurs:
+   a) Record the primary signal and secondary signal values
+   b) Perform retest using fresh calibrator aliquots
+   c) If retest confirms, initiate NCR per SOP-QC-030
+   d) Investigate potential causes:
+      - sensor cartridge coating variation (material)
+      - Calibrator degradation (material)
+      - Instrument malfunction (equipment)
+      - Environmental conditions (environment)
+
+8. PROCEDURE
+
+   8.1 Preparation
+       a) Verify instrument qualification status (current IQ/OQ/PQ)
+       b) Check environmental conditions (temperature, humidity)
+       c) Allow calibrators to equilibrate to room temperature (30 min)
+       d) Verify calibrator lot and expiry date
+
+   8.2 Calibrator Loading
+       a) Load primary signal calibrator into designated position
+       b) Load secondary calibrator into designated position
+       c) Load sensor cartridges from production lot under test
+       d) Initiate calibration sequence per analyzer protocol
+
+   8.3 Signal Measurement
+       a) Instrument automatically measures optical signal
+       b) Record primary signal and secondary signal values (SIU)
+       c) System calculates calibration curve parameters
+       d) System generates PASS or FAIL with applicable error code
+
+   8.4 Results Review
+       a) QC analyst reviews results against acceptance criteria
+       b) If PASS: Document in batch record, proceed to next test
+       c) If FAIL: Follow error code investigation procedure (Section 7)
+       d) QC supervisor review required for any borderline results
+          (within 5% of specification limits)
+
+9. TROUBLESHOOTING
+
+   9.1 Primary Signal Too High (> Spec Max)
+       Possible causes:
+       - sensor cartridge capture reagent density too high (material variation)
+       - Calibrator Standard High concentration above nominal
+       - Instrument optical system drift (increased sensitivity)
+       Action: Verify CART lot COA, check calibrator stability, run
+       instrument diagnostic
+
+   9.2 Primary Signal Too Low (< Spec Min)
+       Possible causes:
+       - sensor cartridge capture reagent density too low or degraded coating
+       - Calibrator Standard High degradation
+       - Instrument optical system drift (decreased sensitivity)
+       Action: Check CART storage conditions, verify calibrator expiry,
+       run instrument diagnostic
+
+   9.3 Secondary Signal Out of Range
+       Possible causes:
+       - Reagent card contamination
+       - Instrument background noise
+       Action: Replace reagent card, clean instrument, retest
+
+10. RECORDS
+    - Calibration Verification Report (form QC-CVR-001)
+    - Error Investigation Log (if applicable)
+    - Instrument usage log
+
+11. REVISION HISTORY
+    Rev 1 (2020-01-15): Initial release
+    Rev 2 (2021-06-01): Added troubleshooting section
+    Rev 3 (2023-01-15): Updated acceptance criteria for NEXUS B2M,
+                         added correlation note for primary signal vs coating density
